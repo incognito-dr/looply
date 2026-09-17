@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion | Sam Hesketh Creative</title>
+<meta name="description" content="Motion picture by Sam Hesketh. Films that capture the wild world in all of its beauty, not too polished and not too raw. Adventure, industry, ecommerce and commercial film work made in the field.">
+<meta property="og:title" content="Motion | Sam Hesketh Creative">
+<meta property="og:description" content="Capturing the wild world in all of its beauty, creating videos to inspire us to go further. Right in the sweet spot.">
+<meta property="og:image" content="assets/img/photos/video-featured-desert-w2000.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/img/brand/icons/Good_Road_To_Follow.png">
+<link rel="apple-touch-icon" href="assets/img/brand/flags/patch.png">
+<link rel="preload" href="assets/fonts/PPNikkeiMaru-Ultrabold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/PPRader-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/PPSupplyMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/pages/motion.css">
+</head>
+<body data-page="motion" class="theme-dark">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== HEADER (default sand variant) ===== -->
+<header class="site-header">
+  <div class="container container--nav">
+    <div class="utility-bar">
+      <a href="notebook.html"><span>Notebook</span><span class="icon icon--notebook" aria-hidden="true"></span></a>
+      <button type="button" data-open="contact"><span>Contact</span><span class="icon icon--contact" aria-hidden="true"></span></button>
+      <a href="general-store.html"><span>General Store</span><span class="icon icon--store" aria-hidden="true"></span></a>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="main-nav__links main-nav__links--left">
+        <li><a href="motion.html" data-nav="motion">Motion</a></li>
+        <li><a href="photography.html" data-nav="photography">Photography</a></li>
+        <li><a href="gun-for-hire.html" data-nav="feature">Feature</a></li>
+      </ul>
+      <a class="wordmark" href="index.html" aria-label="Sam Hesketh Creative, home"><span class="wordmark__name">sam hesketh</span><span class="wordmark__sub">creative</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainnav-right">Menu</button>
+      <ul class="main-nav__links main-nav__links--right" id="mainnav-right">
+        <li><a href="project-arctic.html" data-nav="client">Client</a></li>
+        <li><a href="tradecraft.html#project-log" data-nav="project-log">Project Log</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="page-title" aria-labelledby="page-heading">
+    <span class="icon icon--craft" aria-hidden="true"></span>
+    <h1 id="page-heading">MOTION</h1>
+  </section>
+
+  <!-- ===== FILM PORTFOLIO: category sidebar | featured film + grid | scroll rail ===== -->
+  <section class="container motion-stage" aria-label="Film portfolio">
+
+    <div class="motion-aside" role="group" aria-label="Filter films by category" data-filter-group="films">
+      <ul class="cat-list cat-list--right">
+        <li><button type="button" data-filter="all" aria-pressed="false">ALL</button></li>
+        <li><button type="button" data-filter="culinary" aria-pressed="false">CULINARY</button></li>
+        <li><button type="button" class="is-active" data-filter="adventure" aria-pressed="true">ADVENTURE</button></li>
+      </ul>
+      <p class="motion-blurb">Capturing the wild world in all of its beauty, creating videos to inspire us to go further. Something not too polished, and not too raw. Right in the sweet spot.</p>
+      <ul class="cat-list cat-list--right motion-aside__bottom">
+        <li><button type="button" data-filter="industry" aria-pressed="false">INDUSTRY</button></li>
+        <li><button type="button" data-filter="ecommerce" aria-pressed="false">ECOMMERCE</button></li>
+        <li><button type="button" data-filter="commercial" aria-pressed="false">COMMERCIAL</button></li>
+      </ul>
+    </div>
+
+    <div class="motion-films" id="films">
+      <!-- Featured film. data-video is empty until the client pastes a YouTube or Vimeo URL. -->
+      <a class="video-tile video-tile--featured" href="assets/img/photos/video-featured-desert-w2880.jpg" data-lightbox data-video="" data-cat="adventure commercial">
+        <img src="assets/img/photos/video-featured-desert.jpg"
+             srcset="assets/img/photos/video-featured-desert-w1280.jpg 1280w, assets/img/photos/video-featured-desert-w2000.jpg 2000w, assets/img/photos/video-featured-desert-w2880.jpg 2880w, assets/img/photos/video-featured-desert.jpg 4172w"
+             sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 69vw, 1002px" width="4172" height="2408"
+             alt="Aboriginal man with a red headband and white ochre paint on his face, looking into the distance in warm desert light"
+             fetchpriority="high" decoding="async">
+        <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+        <span class="video-tile__label">Watch film</span>
+      </a>
+
+      <div class="video-grid">
+        <a class="video-tile" href="assets/img/photos/video-thumb-beach-truck.jpg" data-lightbox data-video="" data-cat="adventure commercial">
+          <img src="assets/img/photos/video-thumb-beach-truck.jpg"
+               srcset="assets/img/photos/video-thumb-beach-truck-w1280.jpg 1280w, assets/img/photos/video-thumb-beach-truck.jpg 2084w"
+               sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 34vw, 492px" width="2084" height="956"
+               alt="Couple walking hand in hand beside a loaded Land Rover on a beach at sunset"
+               loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+          <span class="video-tile__label">Watch film</span>
+        </a>
+        <a class="video-tile" href="assets/img/photos/video-thumb-tent.jpg" data-lightbox data-video="" data-cat="adventure ecommerce">
+          <img src="assets/img/photos/video-thumb-tent.jpg"
+               srcset="assets/img/photos/video-thumb-tent-w1280.jpg 1280w, assets/img/photos/video-thumb-tent.jpg 2084w"
+               sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 34vw, 492px" width="2084" height="960"
+               alt="Two people pitching a Sea to Summit tent in tussock grass beneath snow-capped alpine peaks"
+               loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+          <span class="video-tile__label">Watch film</span>
+        </a>
+        <a class="video-tile" href="assets/img/photos/video-thumb-blue-jacket.jpg" data-lightbox data-video="" data-cat="adventure ecommerce">
+          <img src="assets/img/photos/video-thumb-blue-jacket.jpg"
+               srcset="assets/img/photos/video-thumb-blue-jacket-w1280.jpg 1280w, assets/img/photos/video-thumb-blue-jacket.jpg 2084w"
+               sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 34vw, 492px" width="2084" height="960"
+               alt="Woman in a blue and orange jacket laughing as she pulls it over her head against red rock"
+               loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+          <span class="video-tile__label">Watch film</span>
+        </a>
+        <a class="video-tile video-tile--cab" href="assets/img/photos/video-thumb-truck-cab.jpg" data-lightbox data-video="" data-cat="adventure commercial">
+          <img src="assets/img/photos/video-thumb-truck-cab.jpg"
+               srcset="assets/img/photos/video-thumb-truck-cab-w1280.jpg 1280w, assets/img/photos/video-thumb-truck-cab.jpg 2080w"
+               sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 34vw, 492px" width="2080" height="424"
+               alt="Man in a wide-brimmed hat and leather jacket beside a truck windscreen, snowy mountains behind him"
+               loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+          <span class="video-tile__label">Watch film</span>
+        </a>
+        <a class="video-tile video-tile--strip" href="assets/img/photos/video-thumb-night-dive.jpg" data-lightbox data-video="" data-cat="adventure industry">
+          <img src="assets/img/photos/video-thumb-night-dive.jpg"
+               srcset="assets/img/photos/video-thumb-night-dive-w1280.jpg 1280w, assets/img/photos/video-thumb-night-dive.jpg 2080w"
+               sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1440px) 69vw, 1002px" width="2080" height="424"
+               alt="Diver in a black wetsuit and mask swimming through kelp on a night dive, lit by torchlight"
+               loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><span class="play__ring"></span></span>
+          <span class="video-tile__label">Watch film</span>
+        </a>
+      </div>
+
+      <p class="motion-empty">No films in this category yet. Choose ALL to see every film.</p>
+    </div>
+
+    <div class="motion-rail" aria-hidden="true"><span class="motion-rail__thumb"></span></div>
+  </section>
+</main>
+
+<!-- ===== FOOTER (identical on every page) ===== -->
+<footer class="site-footer">
+  <div class="container container--wide">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--left">
+        <div>
+          <h2 class="footer-h">Project guarantee</h2>
+          <p class="footer-text">From the Rockies to the red dirt, and amongst the rain forest, I bring brands and businesses to life through work that's forged in the field, creative built on grit, craft, and a love for the real thing.</p>
+          <p class="footer-text">I chase light, moments, and the people who make them, turning them into stories that live well beyond the journey, refined, ready, and built to be remembered.</p>
+        </div>
+        <p class="footer-lockup"><span><span>Goes where the</span><span>good stories start!</span></span></p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-lists">
+          <div>
+            <h2 class="footer-h">The work</h2>
+            <ul class="footer-links">
+              <li><a href="photography.html">Photography</a></li>
+              <li><a href="motion.html">Video Production</a></li>
+              <li><a href="gun-for-hire.html">Creative Direction</a></li>
+              <li><a href="about.html">Brand Narrative</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-h">Follow along</h2>
+            <ul class="footer-links">
+              <li><a href="https://www.instagram.com/" rel="noopener" target="_blank">Instagram</a></li>
+              <li><a href="notebook.html">Endless Roads</a></li>
+              <li><a href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a></li>
+              <li><a href="notebook.html">Cowboy Coffee</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-h">Connect</h2>
+            <ul class="footer-links">
+              <li><a href="tel:+61474643052">Call</a></li>
+              <li><a href="https://www.linkedin.com/" rel="noopener" target="_blank">LinkedIn</a></li>
+              <li><a href="mailto:info@samuelhesketh.com">Email</a></li>
+              <li><a href="https://wa.me/61474643052" rel="noopener" target="_blank">WhatsApp</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-h">Get involved</h2>
+            <ul class="footer-links">
+              <li><a href="about.html#off-grid">Freedom Machine</a></li>
+              <li><a href="tradecraft.html">Expeditions</a></li>
+              <li><a href="about.html#teams">Classroom</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col center">
+        <h2 class="footer-h">Where is Sam Hesketh?</h2>
+        <p class="footer-text">I've made a habit of showing up in all corners of the globe. Right now you can find me <a href="notebook.html">here</a>!</p>
+        <img class="footer-map" src="assets/img/brand/australia-cream.png" width="936" height="900" alt="Map of Australia" loading="lazy">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+      <p>&copy; <span data-year>2026</span> Samuel Hesketh. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WELCOME MESSAGE (no data-auto: only the home page opens it automatically) ===== -->
+<div class="overlay" id="welcome" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+    <div class="modal__media">
+      <img src="assets/img/photos/welcome-sam-landrover.jpg" srcset="assets/img/photos/welcome-sam-landrover.jpg 1076w" sizes="(max-width: 900px) 100vw, 505px" width="1076" height="1600" alt="Sam crouching beside his Land Rover on a dirt road" loading="lazy">
+    </div>
+    <div class="modal__body">
+      <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+      <h2 class="welcome__title" id="welcome-title">G'day,<br>I'm Sam.</h2>
+      <p class="welcome__intro">* I'm a commercial lifestyle photographer, creative, and filmmaker.</p>
+      <p class="welcome__quote">"I build brand story with soul."</p>
+      <p class="welcome__text">For me, a camera can show what's there, but the real magic is making it felt. The kind of work that sticks, and builds connection. The soul that turns audiences into a following.</p>
+      <img class="welcome__lockup" src="assets/img/brand/lockups/goes-where-cream.png" width="983" height="230" alt="Goes where the good stories start" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT (opens from the utility bar on every page) ===== -->
+<div class="overlay" id="contact" aria-hidden="true">
+  <div class="modal modal--contact" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+    <div class="modal__media">
+      <img src="assets/img/photos/contact-campfire-snow.jpg" srcset="assets/img/photos/contact-campfire-snow.jpg 1088w" sizes="(max-width: 900px) 100vw, 505px" width="1088" height="1600" alt="Crew gathered around a campfire in the snow at night" loading="lazy">
+    </div>
+    <div class="modal__body">
+      <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+      <div class="contact__band">
+        <h2 class="contact__title" id="contact-title">Contact</h2>
+        <p class="contact__sub">Where the story sparks.</p>
+      </div>
+      <form class="form contact__form" action="https://formsubmit.co/info@samuelhesketh.com" method="POST" data-enhance>
+        <input type="hidden" name="_subject" value="New enquiry from samhesketh.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field"><span class="field__mark" aria-hidden="true">*</span><label class="sr-only" for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" required autocomplete="name"></div>
+        <div class="field"><span class="field__mark" aria-hidden="true">*</span><label class="sr-only" for="c-email">Email</label><input id="c-email" name="email" type="email" placeholder="Your email" required autocomplete="email"></div>
+        <div class="field"><span class="field__mark" aria-hidden="true">*</span><label class="sr-only" for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Hi Sam, tell me about the project..." required></textarea></div>
+        <button class="btn btn--khaki" type="submit">Send it</button>
+      </form>
+      <div class="contact__foot">
+        <div>
+          <a href="tel:+61474643052">T. +61 474 643 052</a><br>
+          <a href="mailto:info@samuelhesketh.com">E. info@samuelhesketh.com</a>
+        </div>
+        <span class="icon icon--contact" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LIGHTBOX (photos and films) ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" type="button" data-close aria-label="Close">&times;</button>
+  <div class="lightbox__content"></div>
+  <p class="lightbox__note"></p>
+</div>
+
+<script src="assets/js/site.js"></script>
+<script>
+/* Motion page only: keep the filter buttons' aria-pressed in step with site.js, apply the default
+   category on load, and move the scroll rail's thumb as the portfolio scrolls. */
+(function () {
+  var group = document.querySelector('[data-filter-group="films"]');
+  if (group) {
+    var sync = function () {
+      Array.prototype.forEach.call(group.querySelectorAll('[data-filter]'), function (b) {
+        b.setAttribute('aria-pressed', b.classList.contains('is-active') ? 'true' : 'false');
+      });
+    };
+    group.addEventListener('click', sync);
+    var active = group.querySelector('[data-filter].is-active');
+    if (active) active.click();
+  }
+  /* The stills carry a thin dark band from the mockup crop; tag the lightbox image so motion.css can clip it. */
+  Array.prototype.forEach.call(document.querySelectorAll('.motion-films .video-tile'), function (tile) {
+    tile.addEventListener('click', function () {
+      var img = document.querySelector('#lightbox .lightbox__content img');
+      if (!img) return;
+      img.classList.add('lb-still');
+      if (tile.classList.contains('video-tile--cab') || tile.classList.contains('video-tile--strip')) img.classList.add('lb-still--partial');
+    });
+  });
+  var stage = document.querySelector('.motion-stage'), rail = document.querySelector('.motion-rail'), thumb = document.querySelector('.motion-rail__thumb');
+  var featured = document.querySelector('.video-tile--featured');
+  if (!stage || !rail || !thumb) return;
+  /* Sidebar and rail are exactly the featured tile's height; measure it rather than trusting the 100vw estimate in the CSS
+     (100vw includes a classic scrollbar, which would leave them a few pixels taller than the frame). */
+  var size = function () {
+    if (featured && featured.offsetWidth) stage.style.setProperty('--stage-h', featured.getBoundingClientRect().height + 'px');
+  };
+  var update = function () {
+    var r = stage.getBoundingClientRect(), travel = r.height - window.innerHeight;
+    var p = travel > 0 ? Math.min(1, Math.max(0, -r.top / travel)) : 0;
+    thumb.style.top = Math.round(p * (rail.clientHeight - thumb.offsetHeight)) + 'px';
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', function () { size(); update(); });
+  size(); update();
+})();
+</script>
+</body>
+</html>
