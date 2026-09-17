@@ -1,0 +1,152 @@
+/* =========================================================
+   about.html: page-specific layout, measured from ABOUT-01..07.
+   Loaded after site.css; shared components come from there.
+   ========================================================= */
+
+/* ---------- heroes (plates shown uncropped, copy positions from the tiles) ---------- */
+.hero--arctic .hero__media{aspect-ratio:3000/1848;min-height:0}
+.hero--arctic .hero__text{text-align:right;max-width:27rem}
+.hero--offgrid .hero__media{aspect-ratio:3000/1200;min-height:0}
+.hero--offgrid .hero__title{font-size:clamp(1.8rem,2.9vw,2.6rem)}
+.hero--offgrid .hero__text{max-width:33rem;margin-bottom:1.5rem}
+.about-offgrid__sticker{display:block;width:4.6rem;height:auto;margin-inline:auto}
+.hero--miles{background:var(--cream);color:var(--ink)}
+.hero--miles .hero__media{aspect-ratio:3000/1796;min-height:0}
+.about-miles__script{font-size:clamp(3.4rem,8.8vw,8rem);line-height:.85;color:var(--green);margin:0 0 .6rem -.05em}
+.about-miles__title{font:900 clamp(.82rem,.98vw,.92rem)/1.25 var(--f-nav);text-transform:uppercase;letter-spacing:.005em;color:var(--green);margin:0 0 1.05rem;max-width:28rem}
+.about-miles__text{font-size:clamp(.7rem,.76vw,.74rem);line-height:1.32;max-width:29rem}
+.about-miles__text p{margin:0 0 1.05em}
+@media (min-width:901px){
+  .about-trusted__side{padding-bottom:2.2rem}
+  .hero--about .hero__media{aspect-ratio:3000/1890}
+  .hero--about .hero__copy{top:53%}
+  .hero--arctic .hero__copy{top:66%;right:4.3%}
+  .hero--offgrid .hero__copy{top:58%;max-width:40rem}
+  .about-miles__copy{top:34%;left:3.2%;max-width:32vw;padding-right:0}
+}
+@media (max-width:900px){
+  .hero--offgrid .hero__media,.hero--arctic .hero__media{aspect-ratio:3/2}
+  .hero--arctic .hero__text{text-align:justify;max-width:none}
+  .about-offgrid__sticker{margin-inline:0}
+}
+
+/* ---------- cropped photos: the manifest crops keep a 6-9px page-colour margin with inpainted corners; scale past the rounded clip so the true photo edge meets the radius ---------- */
+.about-teams__img img,.about-trusted__img img{transform:scale(1.02)}
+.about-timeline__img img{transform:scale(1.05)}
+
+/* ---------- intro: serif columns + tintype ---------- */
+.about-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.76fr);gap:clamp(2rem,9.5vw,9rem);align-items:start;padding-block:clamp(3rem,7vw,6.5rem) clamp(3rem,6vw,5.5rem)}
+.about-intro__name{font:800 clamp(2rem,3.1vw,2.8rem)/1 var(--f-display);text-transform:uppercase;margin:0 0 clamp(1.6rem,3vw,2.6rem)}
+.about-prose{font-size:clamp(.85rem,.98vw,.95rem);line-height:1.3;max-width:41rem}
+.about-prose p{margin:0 0 1.15em}
+.about-prose__hi{font-style:italic;margin-bottom:1.35em}
+.about-sub{font:900 clamp(.9rem,1.05vw,.98rem)/1.15 var(--f-nav);text-transform:uppercase;letter-spacing:.005em;margin:2.4rem 0 0}
+.about-sub__tag{font:400 .56rem/1.5 var(--f-mono);letter-spacing:.02em;margin:.05rem 0 1.5rem}
+.about-intro__fig{margin:clamp(2rem,13.5vw,12.5rem) 0 0}
+.about-intro__fig img{display:block;width:92%;height:auto;margin:0 10% 0 auto;clip-path:inset(.7% .9%)} /* trims the crop's cream margin and its inpainted corners; the plate is square in the tile */
+.about-quote{margin:clamp(3rem,6vw,5.5rem) 1.4rem 0 0;text-align:right;line-height:1.3}
+.about-quote .hand{display:block;transform-origin:right center;transform:rotate(-7deg)}
+.about-quote .hand-quote{font-size:clamp(1.05rem,1.4vw,1.35rem);padding-right:.4rem}
+.about-quote__sig{font-size:clamp(1.15rem,1.55vw,1.5rem);margin-top:.55rem}
+
+/* ---------- Studio: Teams of Legends (slate) ---------- */
+.about-teams{padding-block:clamp(2.6rem,4.3vw,3.9rem)}
+.about-teams__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(2rem,9vw,8.5rem);align-items:center}
+.about-teams__copy .eyebrow{font-size:clamp(1.1rem,1.6vw,1.5rem);margin:0 0 -.15em .1em}
+.about-teams__title{font:700 clamp(2rem,3.4vw,3.05rem)/1 var(--f-rader);text-transform:uppercase;margin:0 0 1.3rem}
+.about-teams__copy .prose{font-size:clamp(.86rem,.94vw,.92rem);line-height:1.3;max-width:39rem;margin:0}
+.about-teams__img{aspect-ratio:1070/942}
+
+/* ---------- Equipment list (slate) ---------- */
+.about-gear{margin:0;line-height:0}
+.about-equip{padding-block:clamp(2rem,3.2vw,2.9rem) clamp(2rem,3vw,2.7rem)}
+.about-equip__title{font:800 clamp(1.9rem,2.9vw,2.6rem)/1 var(--f-display);text-transform:uppercase;margin:0 0 .35rem}
+.about-equip__sub{font:900 clamp(.72rem,.85vw,.8rem)/1.2 var(--f-nav);text-transform:uppercase;letter-spacing:.02em;margin:0 0 1.15rem}
+.about-equip__intro{font-size:clamp(.72rem,.8vw,.78rem);line-height:1.3;max-width:47rem;margin:0 0 clamp(2rem,3.4vw,3.2rem)}
+.about-equip .spec-box{padding:0;min-height:0}
+.about-equip .spec-box h4{font-size:1rem;margin-bottom:.65rem}
+.about-equip .spec-box ul{font-size:.6rem;line-height:1.5;margin-bottom:.95rem}
+.about-equip .spec-box ul:last-child{margin-bottom:0}
+
+/* ---------- Vehicles: cards, Remote Location lockup, spec columns ---------- */
+.about-vehicles{padding-block:clamp(1.6rem,2.2vw,2rem) clamp(2.4rem,4vw,3.6rem)}
+.about-cards{display:grid;grid-template-columns:1fr 1fr;gap:.45%;width:78.6%;max-width:1040px;margin:0 auto}
+/* the card crops keep the cream margin, the baked caption under the card and inpainted corners: clip to each card's own rounded outline (Ford ends at 97.2%, Land Rover at 97.5%) plus a tab for the caption */
+.about-card img{display:block;width:100%;height:auto;clip-path:polygon(0.70% 2.70%,0.91% 1.90%,1.49% 1.22%,2.37% 0.76%,3.40% 0.60%,96.60% 0.60%,97.63% 0.76%,98.51% 1.22%,99.09% 1.90%,99.30% 2.70%,99.30% 95.10%,99.09% 95.90%,98.51% 96.58%,97.63% 97.04%,96.60% 97.20%,78.00% 97.20%,78.00% 100.00%,22.00% 100.00%,22.00% 97.20%,3.40% 97.20%,2.37% 97.04%,1.49% 96.58%,0.91% 95.90%,0.70% 95.10%)}
+.about-card:last-child img{clip-path:polygon(0.70% 2.70%,0.91% 1.90%,1.49% 1.22%,2.37% 0.76%,3.40% 0.60%,96.60% 0.60%,97.63% 0.76%,98.51% 1.22%,99.09% 1.90%,99.30% 2.70%,99.30% 95.40%,99.09% 96.20%,98.51% 96.88%,97.63% 97.34%,96.60% 97.50%,78.00% 97.50%,78.00% 100.00%,22.00% 100.00%,22.00% 97.50%,3.40% 97.50%,2.37% 97.34%,1.49% 96.88%,0.91% 96.20%,0.70% 95.40%)}
+.about-vehicle-head{text-align:center;margin:clamp(1.6rem,2.6vw,2.4rem) 0 clamp(1.4rem,2.4vw,2.2rem)}
+.about-vehicle-head__in{display:inline-block;text-align:left;color:var(--red)}
+.about-vehicle-head__in .eyebrow{font-size:.95rem;margin:0 0 -.1em .1em}
+.about-vehicle-head__title{font:700 1.5rem/1 var(--f-rader);text-transform:uppercase;margin:0}
+.about-vehicle-head__sub{display:block;text-align:right;font:italic 400 .58rem/1.2 var(--f-serif);color:var(--ink);margin-top:.15rem}
+.veh-cols{display:grid;grid-template-columns:1fr 1fr;max-width:52rem;margin:0 auto}
+.veh-col{display:flex;flex-direction:column;text-align:center}
+.veh-col__title{font:400 clamp(1rem,1.3vw,1.2rem)/1.2 var(--f-serif);margin:0 0 1.9rem}
+.veh-col__title em{font-style:italic}
+.veh-spec{flex:1;display:grid;grid-template-columns:6.5rem 1fr;gap:0 .5rem;align-content:start;text-align:left;margin:0;padding:.3rem 2.2rem 2.6rem 0;font:400 .72rem/1.5 var(--f-mono);text-transform:uppercase;letter-spacing:.02em}
+.veh-col+.veh-col .veh-spec{border-left:1px solid var(--ink);padding-left:2.4rem;padding-right:0}
+.veh-spec dt,.veh-spec dd{margin:.95rem 0 0}
+.veh-spec dd{font-weight:700}
+.veh-spec dt:first-child,.veh-spec dt:first-child+dd,.veh-spec .tight{margin-top:0}
+.veh-spec__note{font:italic 200 .78rem/1 var(--f-serif);text-transform:none;letter-spacing:0}
+
+/* ---------- Trusted by (green) ---------- */
+.about-trusted{padding-block:clamp(2rem,3.5vw,3.2rem)}
+.about-trusted__grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(1.6rem,4.3vw,3.9rem);align-items:stretch}
+.about-trusted__img{aspect-ratio:1546/996}
+.about-trusted__side{display:flex;flex-direction:column;justify-content:space-between;text-align:right;padding-top:.6rem}
+.about-trusted__quote{margin:0 1rem 2rem 0;line-height:1.3}
+.about-trusted__quote .hand{display:block;transform-origin:right center;transform:rotate(-7deg);font-size:clamp(1rem,1.35vw,1.3rem)}
+.about-trusted__place{margin-top:.4rem;padding-right:1.6rem}
+.about-trusted__title{font:800 clamp(1.6rem,2.3vw,2.1rem)/1 var(--f-display);text-transform:uppercase;margin:0 0 .9rem}
+.about-trusted__list{font-size:.8rem;line-height:1.5;margin:0 0 0 auto;max-width:34rem}
+
+/* ---------- Passage: Where it all started (timeline) ---------- */
+.about-passage{padding-bottom:0}
+.about-passage .section-head{margin-top:clamp(3rem,6vw,5.5rem)}
+.about-passage__title{font:800 clamp(1.7rem,2.3vw,2.1rem)/1.02 var(--f-display)}
+.about-timeline{gap:0;counter-reset:none}
+.about-timeline>li{padding:0 clamp(.8rem,2.4vw,2.2rem) .6rem;border-left:1px solid var(--ink)}
+.about-timeline>li:first-child{border-left:0;padding-left:0}
+.about-timeline>li:last-child{padding-right:0}
+.about-timeline .timeline__year{font-size:clamp(1.2rem,1.45vw,1.35rem);margin-bottom:.55rem}
+.about-timeline .timeline__place{font-size:.9rem;line-height:1.15;min-height:2.3em;margin:0 0 .8rem}
+.about-timeline__img{width:84%;margin:0 auto 1.6rem;aspect-ratio:1/1}
+.about-timeline__img--tall{width:51%;aspect-ratio:310/512}
+.about-timeline__text{font-size:.65rem;line-height:1.6;padding-inline:.15rem}
+.about-timeline__text p{margin:0 0 1.2em}
+.about-passage .rule-mixed{margin:1.8rem 0 1.6rem}
+.about-divider{text-align:center;line-height:1;padding:0 0 clamp(3rem,5.5vw,5.5rem);color:var(--ink)}
+.about-divider .icon{font-size:1.5rem}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .about-timeline>li:nth-child(odd){border-left:0;padding-left:0}
+  .about-timeline>li:nth-child(even){padding-right:0}
+  .about-timeline>li{padding-bottom:1.6rem}
+}
+@media (max-width:900px){
+  .about-intro,.about-teams__grid,.about-trusted__grid{grid-template-columns:1fr}
+  .about-intro__fig{margin-top:1rem;max-width:24rem}
+  .about-intro__fig img{width:100%;margin:0}
+  .about-quote{margin-top:2.6rem}
+  .about-trusted__side{text-align:left;padding-top:0}
+  .about-trusted__quote .hand{transform-origin:left center}
+  .about-trusted__place{padding-right:0;padding-left:1.4rem}
+  .about-trusted__list{margin-left:0}
+  .about-cards{width:100%;max-width:none}
+}
+@media (max-width:700px){
+  .veh-cols{grid-template-columns:1fr}
+  .veh-col+.veh-col{margin-top:2rem}
+  .veh-spec{padding:.3rem 0 .6rem}
+  .veh-col+.veh-col .veh-spec{border-left:0;padding-left:0}
+  .veh-spec{grid-template-columns:5.6rem 1fr}
+}
+@media (max-width:560px){
+  .about-cards{grid-template-columns:1fr;gap:.6rem;max-width:22rem}
+  .about-timeline>li{border-left:0;padding-inline:0;padding-bottom:2rem}
+  .about-timeline .timeline__place{min-height:0}
+  .about-timeline__img{width:76%}
+  .about-timeline__img--tall{width:46%}
+}

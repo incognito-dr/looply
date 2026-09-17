@@ -1,0 +1,55 @@
+/* Notebook: page-specific nudges measured from BLOG_PAGE-01/02.
+   Everything else comes from site.css. */
+
+/* ---- header nit: the UA stylesheet gives <button> text-transform:none, so the utility bar's Contact button
+   rendered mixed case; the tile shows CONTACT (same patch as project-arctic.css / legal.css) ---- */
+.utility-bar button{text-transform:inherit}
+
+/* ---- hero: the notebook plate is 6000x3084; copy sits low-left and the paragraph wraps to five lines like the tile ---- */
+@media (min-width:901px){
+  .hero--notebook .hero__media{aspect-ratio:6000/3084}
+  .hero--notebook .hero__copy{top:auto;bottom:18%;transform:none}
+  .hero--notebook .hero__text{max-width:34rem}
+}
+
+/* ---- masthead: WILDLAND [badge] JOURNALS, Editorial Old 200, centred on the tag-rule width (the tile insets the
+   masthead about 15% inside the rules) with hairline rules around the tag list ---- */
+.masthead{padding:clamp(.4rem,.6vw,.55rem) 0 0}
+.masthead__title{display:flex;align-items:center;justify-content:center;gap:clamp(.5rem,1.9vw,1.9rem);margin:0 clamp(0px,6.5vw,94px) clamp(.3rem,.5vw,.5rem) 0;color:var(--ink)}
+.masthead__word{font:200 clamp(1.9rem,6.75vw,6.4rem)/.9 var(--f-serif);text-transform:uppercase;letter-spacing:-.03em;white-space:nowrap}
+.masthead__badge{width:clamp(2.3rem,9vw,8.5rem);height:auto;flex:none}
+.masthead__tags{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.2rem;list-style:none;margin:0 clamp(0px,6.5vw,94px) 0 0;padding:.6rem 0 .5rem;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font:400 .62rem/1 var(--f-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink)}
+.masthead__tags li::before,.masthead__tags li::after{content:"*"}
+
+/* ---- newspaper grid: the tall mixed rule on the right edge (solid third, then dotted) ---- */
+.news-wrap{position:relative;margin-top:clamp(1.8rem,3.6vw,3.4rem);padding-right:clamp(0px,6.5vw,94px)}
+.news-wrap::before,.news-wrap::after{content:"";position:absolute;right:clamp(6px,2.2vw,32px);width:0}
+.news-wrap::before{top:-1.1rem;height:calc(36% + 1.1rem);border-left:3px solid var(--ink)}
+.news-wrap::after{top:36%;bottom:0;border-left:2px dotted var(--ink)}
+.post a{color:inherit;text-decoration:none}
+
+/* Card titles in the tile are GT Pressura Black (proportional, the nav face), justified, about 15px/19px,
+   not the mono of site.css; bodies are set tighter (about 16px pitch on a 14.5px serif). */
+.post__title{font:900 clamp(.86rem,1.06vw,.96rem)/1.25 var(--f-nav);letter-spacing:.01em;margin:0 0 .55rem}
+.post__body{line-height:1.15}
+.post{margin-bottom:.75rem}
+.post+.post{padding-top:1.45rem}
+
+/* The card-* crops carry the mockup's label strip and shadow fringe around the photo.
+   Show only the photo: a fixed-ratio window (--ar = width / photo height, set per image)
+   with the file enlarged 9% so the fringe sits outside the window. */
+.post__media{position:relative;display:block;overflow:hidden;aspect-ratio:var(--ar,4/5);margin-bottom:.5rem;background:var(--sand)}
+.post__media .post__img{position:absolute;left:-4.5%;top:-4%;width:109%;max-width:none;height:auto;margin:0;transition:opacity .3s}
+.post__media:hover .post__img{opacity:.88}
+.post__title a:hover{text-decoration:underline;text-underline-offset:.15em}
+.journals{padding-bottom:clamp(2rem,4vw,3.5rem)}
+
+@media (max-width:900px){
+  .masthead__title{margin-right:0}
+  .masthead__tags{justify-content:center;margin-right:0}
+  .news-wrap{padding-right:0}
+  .news-wrap::before,.news-wrap::after{display:none}
+  .post{margin-bottom:1.2rem}
+  .post:last-child{margin-bottom:0}
+  .news-col+.news-col .post:first-child{border-top:1px solid var(--ink);padding-top:1.45rem}
+}

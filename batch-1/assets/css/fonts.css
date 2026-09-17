@@ -1,0 +1,19 @@
+/* Sam Hesketh Creative — brand webfonts (self-hosted) */
+@font-face{font-family:"PP Nikkei Maru";src:url(../fonts/PPNikkeiMaru-Ultrabold.woff2) format("woff2"),url(../fonts/PPNikkeiMaru-Ultrabold.woff) format("woff");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Nikkei Maru";src:url(../fonts/PPNikkeiMaru-Heavy.woff2) format("woff2"),url(../fonts/PPNikkeiMaru-Heavy.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Nikkei Maru";src:url(../fonts/PPNikkeiMaru-Regular.woff2) format("woff2"),url(../fonts/PPNikkeiMaru-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Rader";src:url(../fonts/PPRader-Bold.woff2) format("woff2"),url(../fonts/PPRader-Bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Rader";src:url(../fonts/PPRader-Medium.woff2) format("woff2"),url(../fonts/PPRader-Medium.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"GT Pressura";src:url(../fonts/GT-Pressura-Standard-Black.woff2) format("woff2"),url(../fonts/GT-Pressura-Standard-Black.woff) format("woff");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"GT Pressura Extended";src:url(../fonts/GT-Pressura-Extended-Black.woff2) format("woff2"),url(../fonts/GT-Pressura-Extended-Black.woff) format("woff");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Supply Mono";src:url(../fonts/PPSupplyMono-Ultralight.woff2) format("woff2"),url(../fonts/PPSupplyMono-Ultralight.woff) format("woff");font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Supply Mono";src:url(../fonts/PPSupplyMono-Regular.woff2) format("woff2"),url(../fonts/PPSupplyMono-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Supply Mono";src:url(../fonts/PPSupplyMono-Medium.woff2) format("woff2"),url(../fonts/PPSupplyMono-Medium.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Supply Mono";src:url(../fonts/PPSupplyMono-Bold.woff2) format("woff2"),url(../fonts/PPSupplyMono-Bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Editorial Old";src:url(../fonts/PPEditorialOld-Ultralight.woff2) format("woff2"),url(../fonts/PPEditorialOld-Ultralight.woff) format("woff");font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Editorial Old";src:url(../fonts/PPEditorialOld-UltralightItalic.woff2) format("woff2"),url(../fonts/PPEditorialOld-UltralightItalic.woff) format("woff");font-weight:200;font-style:italic;font-display:swap}
+@font-face{font-family:"PP Editorial Old";src:url(../fonts/PPEditorialOld-Regular.woff2) format("woff2"),url(../fonts/PPEditorialOld-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"PP Editorial Old";src:url(../fonts/PPEditorialOld-Italic.woff2) format("woff2"),url(../fonts/PPEditorialOld-Italic.woff) format("woff");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"ED Medimont";src:url(../fonts/ed-medimont-regular.woff2) format("woff2"),url(../fonts/ed-medimont-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+/* Handwriting: the mockups use "August July", which is not in the brand kit. Nothing You Could Do (OFL) is the closest open substitute. */
+@font-face{font-family:"Nothing You Could Do";src:url(../fonts/NothingYouCouldDo-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}

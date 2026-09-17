@@ -1,0 +1,52 @@
+/* Tradecraft page: measured from TRADE_CRAFT-01..03 (1400px tiles, about 1:1 with a 1440 viewport).
+   Everything else comes from site.css. */
+
+/* ---------- Hero ---------- */
+/* The tile sets EXPEDITION FEATURE. in GT Pressura Black (wide, square-cut terminals), not PP Rader:
+   431px wide with a 33px cap height at 1400, which is about 46px Pressura with a touch of tracking.
+   The same lettering is on the GUN_FOR_HIRE-02 hero, so site.css .hero__title should follow; this
+   override can go once it does. */
+.hero--log .hero__title{font-family:var(--f-nav);font-weight:900;font-size:clamp(1.8rem,3.2vw,2.9rem);letter-spacing:.02em}
+/* Copy block sits in the lower third of the plate (block centre at about 64% of the hero height). */
+@media (min-width:901px){
+  .hero--log .hero__copy{top:64%}
+}
+
+/* ---------- Project Log intro (centred) ---------- */
+.log-intro{text-align:center;padding:clamp(1.2rem,1.9vw,1.75rem) 0 0}
+/* PROJECT LOG: GT Pressura Black (barred J, squared O), 276px wide with a 35px cap at 1400. */
+.log-intro__title{font:900 clamp(2rem,3.5vw,3.15rem)/1 var(--f-nav);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}
+/* Sub line: 579px for 58 characters at 1400, i.e. about 16.5px Supply Mono with no tracking. */
+.log-intro__sub{font:400 clamp(.78rem,1.15vw,1.05rem)/1.45 var(--f-mono);text-transform:uppercase;letter-spacing:0;margin:.15rem auto 0;max-width:46rem}
+/* "Miles marked," red roman, "get word;" italic: Editorial Old Ultralight (200), 263px wide at 1400. */
+.log-intro__word{font:200 clamp(1.45rem,2.13vw,1.95rem)/1.15 var(--f-serif);margin:clamp(1.2rem,2vw,1.85rem) 0 0;color:var(--ink)}
+.log-intro__word em{font-style:italic}
+
+/* ---------- Email sign-up: "Email:" then a row of fine dots along the baseline, like the tile ---------- */
+.log-form{justify-content:center;align-items:baseline;gap:.6rem;margin:clamp(1.2rem,2.3vw,2.1rem) auto 0;max-width:24rem}
+.log-form__label{font:400 .64rem/1 var(--f-mono);letter-spacing:.02em;white-space:nowrap;color:var(--ink)}
+.log-form__field{flex:1 1 auto;min-width:0;line-height:1;background:radial-gradient(circle,rgba(38,38,38,.62) .55px,transparent 1.05px) 0 calc(100% - 1px)/4px 2px repeat-x}
+.log-form__field:focus-within{background-image:linear-gradient(var(--ink),var(--ink));background-size:100% 2px}
+.inline-form.log-form input{display:block;width:100%;margin:0;background:transparent;border:0;border-radius:0;padding:0 0 3px;font:400 .64rem/1 var(--f-mono);letter-spacing:.02em;color:var(--ink)}
+.inline-form.log-form input:focus{outline:0}
+.log-form .btn{flex:none}
+
+/* ---------- Poster grid: 428px posters with ~47px gutters and 11 to 17px gaps at 1400;
+   14px corners, no shadow, middle column lifted 40px ---------- */
+#project-log{padding-inline:clamp(16px,3.35vw,48px)}
+.poster-grid--log{--lift:clamp(20px,2.8vw,40px);gap:clamp(10px,1vw,15px);margin-top:calc(clamp(2.2rem,3.3vw,3rem) + var(--lift));padding-bottom:clamp(2rem,3.8vw,3.5rem)}
+.poster-grid--log .poster{position:relative;border-radius:var(--radius);box-shadow:none;aspect-ratio:1852/2732;background:var(--sand)}
+/* The manifest crops carry a 13 to 16px cream margin on every edge (under 1% of 1852x2732); a 1% overscan hides it. */
+.poster-grid--log .poster img{position:absolute;inset:-1%;width:102%;height:102%;object-fit:cover}
+@media (min-width:901px){
+  .poster-grid--log>:nth-child(3n+2){top:calc(-1 * var(--lift))}
+}
+@media (max-width:900px){
+  .poster-grid--log{margin-top:clamp(2rem,4vw,3rem)}
+  .log-form{flex-wrap:wrap}
+  .log-form__field{flex:1 1 10rem}
+}
+
+/* Shared-header fix pending in site.css: a <button> does not inherit text-transform, so "Contact"
+   rendered mixed-case beside NOTEBOOK and GENERAL STORE. Remove once site.css carries it. */
+.utility-bar button{text-transform:inherit}
