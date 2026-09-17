@@ -1,0 +1,83 @@
+/* Journal: 10 Years in the Making (BLOG_TEMPLATE_C-01..09).
+   The C document is 3000px wide, ~1:1 with a 1440px viewport; every measurement below
+   was taken from the tiles. Everything else comes from site.css. */
+
+/* ---- widths used by this template ---- */
+.container--md{max-width:1156px}      /* rounded landscape at ~72% (diver bubbles) */
+.container--narrow{max-width:982px}   /* pair of portraits centred at ~60% */
+
+/* ---- vertical rhythm (measured, scaled with the viewport) ---- */
+.jt-gap-hero{margin-top:clamp(2.5rem,8.9vw,8rem)}
+.jt-gap-xl{margin-top:clamp(3rem,13.9vw,12.5rem)}
+.jt-gap-lg{margin-top:clamp(2.5rem,11.7vw,10.5rem)}
+.jt-gap-md{margin-top:clamp(2rem,7.5vw,6.75rem)}
+.jt-gap-sm{margin-top:clamp(2rem,6.7vw,6rem)}
+.jt-gap-cap{margin-top:clamp(2.2rem,8.3vw,7.5rem)}  /* after a captioned row */
+
+/* lightbox links wrap the rounded photos: they must be blocks for aspect-ratio to apply */
+a.rounded{display:block}
+
+/* The photo crops in assets/img/photos carry a 6-8px cream margin, the mockup's rounded cream corner tabs
+   and, on some, a sliver of the caption printed under them (c-beach-camp, c-fish-scale, card-*).
+   Until the crops are re-cut, zoom them a few percent inside their rounded masks so the artefacts fall outside. */
+.rounded img,.jt-close__media img{transform:scale(1.05)}
+.media-row--tall .rounded img{transform:scale(1.08);transform-origin:50% 20%}   /* caption strip baked in at the bottom */
+.post__media{display:block;overflow:hidden;margin-bottom:.4rem;background:var(--black)}  /* square corners like tile C-08 and notebook.html */
+.post__media img{display:block;width:100%;height:auto;margin:0;transform:scale(1.09);transform-origin:50% 12%}  /* category label baked in at the bottom */
+
+/* ---- day headings (Nikkei, khaki) ---- */
+.jt-day{font:800 clamp(1.15rem,1.67vw,1.5rem)/1.15 var(--f-display);text-transform:uppercase;color:var(--khaki);margin:0 0 1.5rem}
+
+/* ---- green hero band: rounded photo left, eyebrow / title / quote right, badge bottom right ---- */
+.jt-hero{position:relative;padding:clamp(1.6rem,4vw,3.5rem) 0 clamp(5.2rem,6.6vw,5.9rem)}
+.jt-hero__grid{display:grid;grid-template-columns:minmax(0,1.33fr) minmax(0,1fr);column-gap:clamp(20px,3.3vw,48px);align-items:start}
+.jt-hero__media{aspect-ratio:1506/630;background:var(--black)}
+.jt-hero__eyebrow{font-size:clamp(1.1rem,1.6vw,1.5rem);margin:0 0 .2rem .1em}
+.jt-hero__title{font:700 clamp(2rem,3.6vw,3.3rem)/.95 var(--f-rader);text-transform:uppercase;margin:0 0 1rem}
+.jt-hero__quote{font:italic 200 clamp(1.05rem,1.55vw,1.4rem)/1.3 var(--f-serif);margin:0;max-width:34em}
+.jt-hero__badge{position:absolute;right:clamp(8px,1.5vw,22px);bottom:.6rem;width:clamp(66px,5.8vw,84px);height:auto}  /* artwork is 75% of the PNG canvas: renders ~62px like the tile */
+
+/* ---- slate band with a flush-left portrait and the day copy at right ---- */
+.jt-band{padding:clamp(1.6rem,3.8vw,3.4rem) 0 clamp(2rem,3.9vw,3.5rem)}
+.jt-band__grid{display:grid;grid-template-columns:34.2% minmax(0,1fr);align-items:center}
+.jt-band__media .rounded{aspect-ratio:1022/1456;background:var(--black)}
+.jt-band__copy{padding:0 22.2% 0 10%}
+
+/* ---- slate band with centred copy and a row of three portraits ---- */
+.jt-band--text{padding:clamp(2.5rem,5.8vw,5.25rem) 0 clamp(3rem,9.9vw,8.9rem)}
+.jt-band--text .media-row{margin-top:clamp(2rem,7.8vw,7rem)}
+.media-row--portrait .rounded{aspect-ratio:892/1064}
+
+/* ---- plain text section on cream ---- */
+.jt-text{padding-block:clamp(3rem,8.3vw,7.5rem) clamp(3rem,10.7vw,9.6rem)}
+
+/* ---- closing: right-aligned essay beside the Jago portrait, flush with the right edge ---- */
+.jt-close{display:grid;grid-template-columns:minmax(0,1fr) clamp(240px,35vw,504px);column-gap:clamp(24px,5.5vw,80px);align-items:start;padding-left:var(--gutter);margin-top:clamp(3rem,9.3vw,8.4rem)}
+.jt-close__copy{max-width:640px;margin-left:auto;text-align:right;padding-top:1.1rem}
+.jt-close__media{border-radius:var(--radius) 0 0 var(--radius);overflow:hidden;aspect-ratio:1050/1458;background:var(--black)}
+.jt-close__media img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* handwritten sign-off, rotated like the mockup */
+.jt-sig{display:inline-block;margin:clamp(2rem,3.2vw,2.9rem) 0 0 clamp(0px,4vw,3.6rem);transform:rotate(-7deg);transform-origin:left center;font:400 clamp(1.1rem,1.65vw,1.5rem)/1.4 var(--f-hand);color:var(--ink)}
+.jt-sig .hand{display:block;transform:none;font:inherit}
+.jt-sig__place{display:block;padding-left:3.2em}
+
+/* ---- Notebook cards row (newspaper grid) with the mixed vertical rule at the far right ---- */
+.jt-news{padding:clamp(3rem,7vw,6.5rem) 0 clamp(2.5rem,4.4vw,4rem)}
+.jt-news .rule-mixed{margin:0 0 clamp(2rem,3.9vw,3.5rem)}
+.jt-news__wrap{max-width:1310px}
+.jt-news__grid{position:relative}
+.jt-vrule{position:absolute;top:0;bottom:0;right:calc(.45rem - var(--gutter));width:2px}
+.jt-vrule::before,.jt-vrule::after{content:"";position:absolute;left:0;width:0;border-left:2px solid var(--ink)}
+.jt-vrule::before{top:0;height:17%}
+.jt-vrule::after{top:calc(17% + .6rem);bottom:0;border-left-style:dotted}
+
+@media (max-width:900px){
+  .jt-hero__grid{grid-template-columns:1fr;row-gap:1.6rem}
+  .jt-band__grid{grid-template-columns:1fr;row-gap:1.8rem}
+  .jt-band__media,.jt-band__copy{padding:0 var(--gutter)}
+  .jt-close{grid-template-columns:1fr;row-gap:2rem;padding-right:var(--gutter)}
+  .jt-close__copy{max-width:none;text-align:left;padding-top:0}
+  .jt-close__media{order:-1;border-radius:var(--radius);max-width:420px}
+  .jt-vrule{display:none}
+}

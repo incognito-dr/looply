@@ -1,0 +1,96 @@
+/* Project page (Arctic Project): page-specific layout measured from PROJECT_TEMPLATE-01..09.
+   Everything else comes from site.css. Prefix: .pa- */
+
+/* ---------- hero plate (clean plate, no copy in the mockup) ---------- */
+.pa-hero{margin:0}
+.pa-hero .hero__media{aspect-ratio:3000/1332}
+
+/* ---------- project overview band (Sam Blue, measured #658BA2 in the tiles) ---------- */
+.pa-band{background:var(--blue);color:var(--cream-3);padding:clamp(2rem,4.2vw,60px) 0 clamp(2.5rem,7.6vw,110px)}
+.pa-overview{display:grid;grid-template-columns:32.5% 1fr 32.5%;align-items:start}
+.pa-overview__photo{aspect-ratio:894/1514}
+.pa-overview__copy{justify-self:center;width:100%;max-width:23rem;text-align:center}
+.pa-overview__title{font:700 clamp(2.2rem,3.45vw,3.1rem)/1 var(--f-rader);text-transform:uppercase;margin:-.25em 0 1.15em}
+.pa-overview__list{margin:0;font:400 .85rem/1.36 var(--f-mono)}
+.pa-overview__list dt{font:700 1.4rem/1 var(--f-rader);text-transform:uppercase;margin:.8em 0 0}
+.pa-overview__list dt:first-child{margin-top:0}
+.pa-overview__list dd{margin:.8em 0 0}
+.pa-overview__list dd:last-of-type{margin-top:1.8em}
+.pa-overview__role{line-height:1.78}
+.pa-deliverables{list-style:none;margin:0;padding:0;text-transform:uppercase}
+.pa-deliverables li+li{margin-top:1.2em}
+.pa-deliverables__n{display:block}
+
+/* shared header nit: the Contact <button> does not inherit the utility bar's uppercase (UA stylesheet), mockup shows CONTACT */
+.utility-bar button{text-transform:inherit}
+
+/* ---------- full-bleed plates ---------- */
+/* The plates (and the hero) carry a sliver of the mockup background top and bottom (up to 1.8% of the image height
+   in the responsive variants); they are zoomed 4.5% inside their clipping figure so the sliver falls outside the frame. */
+.pa-plate{margin:0;overflow:hidden}
+.pa-plate img,.pa-hero .hero__media{transform:scale(1.045)}
+
+/* ---------- rounded photo rows ---------- */
+.pa-row{gap:clamp(10px,1.3vw,19px)}
+.pa-row .rounded{display:block;color:inherit}
+.pa-row .rounded:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.pa-row--tall .rounded{aspect-ratio:892/1064}
+.pa-pair{width:65.9%;margin-inline:auto}
+/* The gallery and spread crops carry a 6-8px sliver of the mockup's cream page along their edges
+   (photos must not be re-encoded), so they are zoomed 3.5% inside their rounded clip to hide it. */
+.pa-row .rounded img,.pa-spread__photo img{transform:scale(1.035)}
+
+/* ---------- magazine spreads: PROJECT DEPTH (photo left) and SUMMARY (photo right) ---------- */
+.pa-spread{display:grid;grid-template-columns:35% 1fr;align-items:center}
+.pa-spread--flip{grid-template-columns:1fr 35%}
+.pa-spread__photo{aspect-ratio:1050/1456;overflow:hidden;background:var(--sand)}
+.pa-spread__photo img{display:block;width:100%;height:100%;object-fit:cover}
+.pa-spread__photo--left{border-radius:0 var(--radius) var(--radius) 0}
+.pa-spread__photo--right{border-radius:var(--radius) 0 0 var(--radius)}
+.pa-spread__copy{padding:2rem 23.9% 2rem 8.8%;font-weight:400;line-height:1.35;margin-top:-4.1rem}
+.pa-spread__copy p{margin:0 0 1.35em}
+.pa-spread__copy p:last-child{margin-bottom:0}
+.pa-spread--flip .pa-spread__copy{padding:2rem 8.8% 2rem 23.9%;text-align:right;margin-top:2.2rem}
+.pa-spread__title{font:700 clamp(1.9rem,3.25vw,3rem)/1 var(--f-rader);text-transform:uppercase;color:var(--blue);margin:0 0 1.2em}
+
+/* ---------- vertical rhythm (measured gaps at 1440) ---------- */
+.pa-gap-12{margin-top:clamp(8px,.85vw,12px)}
+.pa-gap-24{margin-top:clamp(14px,1.7vw,24px)}
+.pa-gap-54{margin-top:clamp(1.75rem,3.75vw,54px)}
+.pa-gap-66{margin-top:clamp(2rem,4.6vw,66px)}
+.pa-gap-84{margin-top:clamp(2.4rem,5.85vw,84px)}
+.pa-gap-122{margin-top:clamp(3rem,8.5vw,122px)}
+.pa-gap-140{margin-top:clamp(3.4rem,9.75vw,140px)}
+
+/* ---------- "feature PROJECTS." row: same sizes as gun-for-hire (the tiles set the script, title and card type
+   larger than the shared defaults; tile 08: plate -> "feature" 56px, PROJECTS baseline -> cards 15px) ---------- */
+.pa-projects .section-head{margin-top:clamp(2rem,3.6vw,3.25rem);margin-bottom:.9rem}
+.pa-projects .section-head .eyebrow{font-size:clamp(1.15rem,2vw,1.8rem);margin-left:-.3em}
+.pa-projects .section-head__title{font-size:clamp(2.4rem,4.9vw,4.4rem)}
+.pa-projects .card__title{font-size:clamp(1.7rem,3.3vw,3rem)}
+.pa-projects .card__sub{font-size:.8rem}
+.pa-projects .rule-mixed{margin:2rem 0 0}
+/* The three card crops carry a 13-16px frame of the mockup's cream page along their straight edges (the corners
+   were cut through the photo), which shows as soft bumps at each rounded corner; zoom them inside the clip. */
+.pa-projects .card img{transform:scale(1.03)}
+.pa-projects .card:hover img{transform:scale(1.065)}
+
+/* ---------- "go" glyph between the mixed rule and the footer ----------
+   Tile 08: rule -> glyph top 26px, glyph 24x12px, glyph bottom -> footer 42px
+   (the 1.8rem mask box has ~8px of transparent space above and below the glyph). */
+.pa-divider{text-align:center;line-height:1;padding:1.1rem 0 2.1rem;color:var(--ink)}
+.pa-divider .icon{font-size:1.8rem}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .pa-hero .hero__media{aspect-ratio:3/2;object-fit:cover}
+  .pa-overview{grid-template-columns:1fr 1fr;gap:clamp(10px,1.3vw,19px)}
+  .pa-overview__copy{grid-column:1/-1;order:-1;margin-bottom:1.6rem}
+  .pa-overview__title{margin-top:0}
+  .pa-spread,.pa-spread--flip{grid-template-columns:1fr}
+  .pa-spread__photo{aspect-ratio:4/3}
+  .pa-spread__photo--left,.pa-spread__photo--right{border-radius:0}
+  .pa-spread--flip .pa-spread__photo{order:-1}
+  .pa-spread__copy,.pa-spread--flip .pa-spread__copy{padding:1.8rem var(--gutter) .8rem;text-align:left;margin-top:0}
+  .pa-pair{width:100%}
+}
