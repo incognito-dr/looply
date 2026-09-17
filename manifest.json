@@ -1,0 +1,2172 @@
+{
+ "home-hero": {
+  "page": "Landing Page",
+  "box": [
+   0,
+   0,
+   6000,
+   3750
+  ],
+  "w": 6000,
+  "h": 3750,
+  "desc": "Aerial of a lone 4x4 on a dark outback ridge at golden hour (landing hero)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/home-hero.jpg",
+  "srcset": "assets/img/photos/home-hero-w1280.jpg 1280w, assets/img/photos/home-hero-w2000.jpg 2000w, assets/img/photos/home-hero-w2880.jpg 2880w, assets/img/photos/home-hero.jpg 6000w",
+  "ratio": 1.6
+ },
+ "gfh-motion-panel": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   33,
+   1136,
+   3000,
+   4432
+  ],
+  "w": 2967,
+  "h": 3296,
+  "desc": "Freediver underwater among kelp, teal (Motion Picture panel)",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/gfh-motion-panel.jpg",
+  "srcset": "assets/img/photos/gfh-motion-panel-w1280.jpg 1280w, assets/img/photos/gfh-motion-panel-w2000.jpg 2000w, assets/img/photos/gfh-motion-panel.jpg 2967w",
+  "ratio": 0.9002
+ },
+ "gfh-photo-panel": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   3041,
+   1136,
+   5959,
+   4432
+  ],
+  "w": 2918,
+  "h": 3296,
+  "desc": "Ford Ranger with swag on roof in golden tussock, mountains (Photography panel)",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/gfh-photo-panel.jpg",
+  "srcset": "assets/img/photos/gfh-photo-panel-w1280.jpg 1280w, assets/img/photos/gfh-photo-panel-w2000.jpg 2000w, assets/img/photos/gfh-photo-panel.jpg 2918w",
+  "ratio": 0.8853
+ },
+ "project-ecomm": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   228,
+   4952,
+   2016,
+   6188
+  ],
+  "w": 1788,
+  "h": 1236,
+  "desc": "Close-up of hands adjusting a TAG Heuer smartwatch (E-comm card)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/project-ecomm.jpg",
+  "srcset": "assets/img/photos/project-ecomm-w1280.jpg 1280w, assets/img/photos/project-ecomm.jpg 1788w",
+  "ratio": 1.4466
+ },
+ "project-lifestyle": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   2128,
+   4952,
+   3916,
+   6188
+  ],
+  "w": 1788,
+  "h": 1236,
+  "desc": "Two women in Cotopaxi jackets bouldering by the sea (Lifestyle card)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/project-lifestyle.jpg",
+  "srcset": "assets/img/photos/project-lifestyle-w1280.jpg 1280w, assets/img/photos/project-lifestyle.jpg 1788w",
+  "ratio": 1.4466
+ },
+ "project-culinary": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   4000,
+   4952,
+   5788,
+   6188
+  ],
+  "w": 1788,
+  "h": 1236,
+  "desc": "Plated lobster dish close-up (Culinary card, Ritz-Carlton)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/project-culinary.jpg",
+  "srcset": "assets/img/photos/project-culinary-w1280.jpg 1280w, assets/img/photos/project-culinary.jpg 1788w",
+  "ratio": 1.4466
+ },
+ "expedition-canoe-colour": {
+  "page": "GUN FOR HIRE",
+  "box": [
+   0,
+   6716,
+   6000,
+   10140
+  ],
+  "w": 6000,
+  "h": 3424,
+  "desc": "Elderly Bajau man in conical hat holding paddle, colour (Expedition feature)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/expedition-canoe-colour.jpg",
+  "srcset": "assets/img/photos/expedition-canoe-colour-w1280.jpg 1280w, assets/img/photos/expedition-canoe-colour-w2000.jpg 2000w, assets/img/photos/expedition-canoe-colour-w2880.jpg 2880w, assets/img/photos/expedition-canoe-colour.jpg 6000w",
+  "ratio": 1.7523
+ },
+ "expedition-canoe-bw": {
+  "page": "TRADE CRAFT",
+  "box": [
+   0,
+   1040,
+   6000,
+   4336
+  ],
+  "w": 6000,
+  "h": 3296,
+  "desc": "Elderly Bajau man paddling a canoe among palms, black and white (Expedition feature)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/expedition-canoe-bw.jpg",
+  "srcset": "assets/img/photos/expedition-canoe-bw-w1280.jpg 1280w, assets/img/photos/expedition-canoe-bw-w2000.jpg 2000w, assets/img/photos/expedition-canoe-bw-w2880.jpg 2880w, assets/img/photos/expedition-canoe-bw.jpg 6000w",
+  "ratio": 1.8204
+ },
+ "poster-82-north": {
+  "page": "TRADE CRAFT",
+  "box": [
+   2084,
+   5444,
+   3936,
+   8176
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "82 North poster, ice floes",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-82-north.jpg",
+  "srcset": "assets/img/photos/poster-82-north-w1280.jpg 1280w, assets/img/photos/poster-82-north.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-the-hunt": {
+  "page": "TRADE CRAFT",
+  "box": [
+   192,
+   5624,
+   2044,
+   8356
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "The Hunt poster, freediver with fish",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-the-hunt.jpg",
+  "srcset": "assets/img/photos/poster-the-hunt-w1280.jpg 1280w, assets/img/photos/poster-the-hunt.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-detour": {
+  "page": "TRADE CRAFT",
+  "box": [
+   3964,
+   5624,
+   5816,
+   8356
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "Detour poster, green, Land Rover in valley",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-detour.jpg",
+  "srcset": "assets/img/photos/poster-detour-w1280.jpg 1280w, assets/img/photos/poster-detour.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-swingarm-city": {
+  "page": "TRADE CRAFT",
+  "box": [
+   2080,
+   8204,
+   3928,
+   10940
+  ],
+  "w": 1848,
+  "h": 2736,
+  "desc": "Swingarm City poster, dirt bike in dust",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-swingarm-city.jpg",
+  "srcset": "assets/img/photos/poster-swingarm-city-w1280.jpg 1280w, assets/img/photos/poster-swingarm-city.jpg 1848w",
+  "ratio": 0.6754
+ },
+ "poster-ice-cold": {
+  "page": "TRADE CRAFT",
+  "box": [
+   192,
+   8384,
+   2044,
+   11120
+  ],
+  "w": 1852,
+  "h": 2736,
+  "desc": "Ice Cold poster, camper in snow",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-ice-cold.jpg",
+  "srcset": "assets/img/photos/poster-ice-cold-w1280.jpg 1280w, assets/img/photos/poster-ice-cold.jpg 1852w",
+  "ratio": 0.6769
+ },
+ "poster-vancouver-island": {
+  "page": "TRADE CRAFT",
+  "box": [
+   3984,
+   8388,
+   5836,
+   11120
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "Vancouver Island poster, float plane",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-vancouver-island.jpg",
+  "srcset": "assets/img/photos/poster-vancouver-island-w1280.jpg 1280w, assets/img/photos/poster-vancouver-island.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-anti-poaching": {
+  "page": "TRADE CRAFT",
+  "box": [
+   2080,
+   10972,
+   3928,
+   13700
+  ],
+  "w": 1848,
+  "h": 2728,
+  "desc": "Anti-Poaching in the Karoo poster",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-anti-poaching.jpg",
+  "srcset": "assets/img/photos/poster-anti-poaching-w1280.jpg 1280w, assets/img/photos/poster-anti-poaching.jpg 1848w",
+  "ratio": 0.6774
+ },
+ "poster-ritz-carlton": {
+  "page": "TRADE CRAFT",
+  "box": [
+   192,
+   11148,
+   2044,
+   13880
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "The Ritz-Carlton Western Australia poster, swimmer",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-ritz-carlton.jpg",
+  "srcset": "assets/img/photos/poster-ritz-carlton-w1280.jpg 1280w, assets/img/photos/poster-ritz-carlton.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-fire-food": {
+  "page": "TRADE CRAFT",
+  "box": [
+   3964,
+   11148,
+   5816,
+   13880
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "Fire and Food Backcountry poster",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-fire-food.jpg",
+  "srcset": "assets/img/photos/poster-fire-food-w1280.jpg 1280w, assets/img/photos/poster-fire-food.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "poster-pilot": {
+  "page": "TRADE CRAFT",
+  "box": [
+   2080,
+   13748,
+   3928,
+   16480
+  ],
+  "w": 1848,
+  "h": 2732,
+  "desc": "Safari pilot in helicopter poster",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-pilot.jpg",
+  "srcset": "assets/img/photos/poster-pilot-w1280.jpg 1280w, assets/img/photos/poster-pilot.jpg 1848w",
+  "ratio": 0.6764
+ },
+ "poster-cheetah": {
+  "page": "TRADE CRAFT",
+  "box": [
+   192,
+   13924,
+   2044,
+   16660
+  ],
+  "w": 1852,
+  "h": 2736,
+  "desc": "Cheetah black and white poster",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-cheetah.jpg",
+  "srcset": "assets/img/photos/poster-cheetah-w1280.jpg 1280w, assets/img/photos/poster-cheetah.jpg 1852w",
+  "ratio": 0.6769
+ },
+ "poster-surf-sisters": {
+  "page": "TRADE CRAFT",
+  "box": [
+   3964,
+   13928,
+   5816,
+   16660
+  ],
+  "w": 1852,
+  "h": 2732,
+  "desc": "Two women on a surfboard poster",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/poster-surf-sisters.jpg",
+  "srcset": "assets/img/photos/poster-surf-sisters-w1280.jpg 1280w, assets/img/photos/poster-surf-sisters.jpg 1852w",
+  "ratio": 0.6779
+ },
+ "tradecraft-overlander": {
+  "page": "TRADE CRAFT",
+  "box": [
+   4068,
+   6556,
+   5688,
+   7760
+  ],
+  "w": 1620,
+  "h": 1204,
+  "desc": "Land Rover with roof tent in golden grass below mountains",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/tradecraft-overlander.jpg",
+  "srcset": "assets/img/photos/tradecraft-overlander-w1280.jpg 1280w, assets/img/photos/tradecraft-overlander.jpg 1620w",
+  "ratio": 1.3455
+ },
+ "wild-road-card": {
+  "page": "TRADE CRAFT",
+  "box": [
+   4680,
+   7960,
+   5096,
+   8200
+  ],
+  "w": 416,
+  "h": 240,
+  "desc": "Small green Wild Road April 2023 card graphic",
+  "variants": [],
+  "src": "assets/img/photos/wild-road-card.jpg",
+  "srcset": "assets/img/photos/wild-road-card.jpg 416w",
+  "ratio": 1.7333
+ },
+ "store-hero": {
+  "page": "GENERAL STORE",
+  "box": [
+   0,
+   1040,
+   6000,
+   3280
+  ],
+  "w": 6000,
+  "h": 2240,
+  "desc": "Land Rover with roof tent by a lake at sunrise, campfire smoke, motorbike (store hero)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/store-hero.jpg",
+  "srcset": "assets/img/photos/store-hero-w1280.jpg 1280w, assets/img/photos/store-hero-w2000.jpg 2000w, assets/img/photos/store-hero-w2880.jpg 2880w, assets/img/photos/store-hero.jpg 6000w",
+  "ratio": 2.6786
+ },
+ "product-cookset": {
+  "page": "GENERAL STORE",
+  "box": [
+   1772,
+   4408,
+   2868,
+   5248
+  ],
+  "w": 1096,
+  "h": 840,
+  "desc": "Sea to Summit Detour cookset on cream",
+  "variants": [],
+  "src": "assets/img/photos/product-cookset.jpg",
+  "srcset": "assets/img/photos/product-cookset.jpg 1096w",
+  "ratio": 1.3048
+ },
+ "product-headlamp": {
+  "page": "GENERAL STORE",
+  "box": [
+   3080,
+   4432,
+   4268,
+   5192
+  ],
+  "w": 1188,
+  "h": 760,
+  "desc": "Black Diamond headlamp on cream",
+  "variants": [],
+  "src": "assets/img/photos/product-headlamp.jpg",
+  "srcset": "assets/img/photos/product-headlamp.jpg 1188w",
+  "ratio": 1.5632
+ },
+ "notebook-hero": {
+  "page": "BLOG PAGE",
+  "box": [
+   0,
+   824,
+   6000,
+   3908
+  ],
+  "w": 6000,
+  "h": 3084,
+  "desc": "Spearfisher underwater in seagrass, black and white (notebook hero)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/notebook-hero.jpg",
+  "srcset": "assets/img/photos/notebook-hero-w1280.jpg 1280w, assets/img/photos/notebook-hero-w2000.jpg 2000w, assets/img/photos/notebook-hero-w2880.jpg 2880w, assets/img/photos/notebook-hero.jpg 6000w",
+  "ratio": 1.9455
+ },
+ "card-rain-surfer": {
+  "page": "BLOG PAGE",
+  "box": [
+   376,
+   4924,
+   1876,
+   6740
+  ],
+  "w": 1500,
+  "h": 1816,
+  "desc": "Silhouette of a surfer in heavy rain, black and white",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-rain-surfer.jpg",
+  "srcset": "assets/img/photos/card-rain-surfer-w1280.jpg 1280w, assets/img/photos/card-rain-surfer.jpg 1500w",
+  "ratio": 0.826
+ },
+ "card-peaches": {
+  "page": "BLOG PAGE",
+  "box": [
+   2152,
+   4924,
+   3624,
+   6032
+  ],
+  "w": 1472,
+  "h": 1108,
+  "desc": "Roasted peaches in a cast iron pan",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-peaches.jpg",
+  "srcset": "assets/img/photos/card-peaches-w1280.jpg 1280w, assets/img/photos/card-peaches.jpg 1472w",
+  "ratio": 1.3285
+ },
+ "card-palms": {
+  "page": "BLOG PAGE",
+  "box": [
+   3864,
+   4924,
+   5364,
+   6740
+  ],
+  "w": 1500,
+  "h": 1816,
+  "desc": "Palm trees reflected in turquoise water with lens flare",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-palms.jpg",
+  "srcset": "assets/img/photos/card-palms-w1280.jpg 1280w, assets/img/photos/card-palms.jpg 1500w",
+  "ratio": 0.826
+ },
+ "card-defender": {
+  "page": "BLOG PAGE",
+  "box": [
+   2144,
+   6716,
+   3624,
+   8412
+  ],
+  "w": 1480,
+  "h": 1696,
+  "desc": "Green Land Rover Defender driving on red dirt at sunset",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-defender.jpg",
+  "srcset": "assets/img/photos/card-defender-w1280.jpg 1280w, assets/img/photos/card-defender.jpg 1480w",
+  "ratio": 0.8726
+ },
+ "card-truck-man": {
+  "page": "BLOG PAGE",
+  "box": [
+   376,
+   7588,
+   1876,
+   9328
+  ],
+  "w": 1500,
+  "h": 1740,
+  "desc": "Man loading gear into a pickup truck canopy",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-truck-man.jpg",
+  "srcset": "assets/img/photos/card-truck-man-w1280.jpg 1280w, assets/img/photos/card-truck-man.jpg 1500w",
+  "ratio": 0.8621
+ },
+ "card-campfire-beach": {
+  "page": "BLOG PAGE",
+  "box": [
+   3872,
+   7788,
+   5340,
+   8896
+  ],
+  "w": 1468,
+  "h": 1108,
+  "desc": "Campfire on a beach at dusk with driftwood",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/card-campfire-beach.jpg",
+  "srcset": "assets/img/photos/card-campfire-beach-w1280.jpg 1280w, assets/img/photos/card-campfire-beach.jpg 1468w",
+  "ratio": 1.3249
+ },
+ "photo-cocktail-pool": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   1348,
+   968,
+   2608,
+   2444
+  ],
+  "w": 1260,
+  "h": 1476,
+  "desc": "Orange cocktail with cinnamon stick by a pool",
+  "variants": [],
+  "src": "assets/img/photos/photo-cocktail-pool.jpg",
+  "srcset": "assets/img/photos/photo-cocktail-pool.jpg 1260w",
+  "ratio": 0.8537
+ },
+ "photo-waitress": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   2624,
+   983,
+   4164,
+   2642
+  ],
+  "w": 1540,
+  "h": 1659,
+  "desc": "Waitress in navy uniform carrying oysters on blue plates",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/photo-waitress.jpg",
+  "srcset": "assets/img/photos/photo-waitress-w1280.jpg 1280w, assets/img/photos/photo-waitress.jpg 1540w",
+  "ratio": 0.9283
+ },
+ "photo-booth": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   2624,
+   2679,
+   4164,
+   3384
+  ],
+  "w": 1540,
+  "h": 705,
+  "desc": "Restaurant booth interior in blue tones",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/photo-booth.jpg",
+  "srcset": "assets/img/photos/photo-booth-w1280.jpg 1280w, assets/img/photos/photo-booth.jpg 1540w",
+  "ratio": 2.1844
+ },
+ "photo-fish-plate": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   4180,
+   968,
+   5604,
+   1688
+  ],
+  "w": 1424,
+  "h": 720,
+  "desc": "Plated fish dish on a dark plate",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/photo-fish-plate.jpg",
+  "srcset": "assets/img/photos/photo-fish-plate-w1280.jpg 1280w, assets/img/photos/photo-fish-plate.jpg 1424w",
+  "ratio": 1.9778
+ },
+ "photo-cocktail-pink": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   4180,
+   1704,
+   5612,
+   3392
+  ],
+  "w": 1432,
+  "h": 1688,
+  "desc": "Yellow cocktail on pink table with palm shadow",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/photo-cocktail-pink.jpg",
+  "srcset": "assets/img/photos/photo-cocktail-pink-w1280.jpg 1280w, assets/img/photos/photo-cocktail-pink.jpg 1432w",
+  "ratio": 0.8483
+ },
+ "photo-hand-drink": {
+  "page": "PHOTO PORTFILIO ",
+  "box": [
+   1348,
+   2468,
+   2608,
+   3412
+  ],
+  "w": 1260,
+  "h": 944,
+  "desc": "Hand holding an old fashioned, red jacket",
+  "variants": [],
+  "src": "assets/img/photos/photo-hand-drink.jpg",
+  "srcset": "assets/img/photos/photo-hand-drink.jpg 1260w",
+  "ratio": 1.3347
+ },
+ "video-featured-desert": {
+  "page": "VIDEO PORTFILIO 1:2",
+  "box": [
+   1368,
+   1108,
+   5540,
+   3516
+  ],
+  "w": 4172,
+  "h": 2408,
+  "desc": "Aboriginal man with red headband and ochre paint in desert light (featured film still)",
+  "variants": [
+   1280,
+   2000,
+   2880
+  ],
+  "src": "assets/img/photos/video-featured-desert.jpg",
+  "srcset": "assets/img/photos/video-featured-desert-w1280.jpg 1280w, assets/img/photos/video-featured-desert-w2000.jpg 2000w, assets/img/photos/video-featured-desert-w2880.jpg 2880w, assets/img/photos/video-featured-desert.jpg 4172w",
+  "ratio": 1.7326
+ },
+ "video-thumb-beach-truck": {
+  "page": "VIDEO PORTFILIO 2:2",
+  "box": [
+   3496,
+   1108,
+   5580,
+   2064
+  ],
+  "w": 2084,
+  "h": 956,
+  "desc": "Couple walking by a loaded Land Rover on a beach at sunset",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/video-thumb-beach-truck.jpg",
+  "srcset": "assets/img/photos/video-thumb-beach-truck-w1280.jpg 1280w, assets/img/photos/video-thumb-beach-truck.jpg 2084w",
+  "ratio": 2.1799
+ },
+ "video-thumb-tent": {
+  "page": "VIDEO PORTFILIO 2:2",
+  "box": [
+   1368,
+   2104,
+   3452,
+   3064
+  ],
+  "w": 2084,
+  "h": 960,
+  "desc": "Two people pitching a tent under alpine peaks",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/video-thumb-tent.jpg",
+  "srcset": "assets/img/photos/video-thumb-tent-w1280.jpg 1280w, assets/img/photos/video-thumb-tent.jpg 2084w",
+  "ratio": 2.1708
+ },
+ "video-thumb-blue-jacket": {
+  "page": "VIDEO PORTFILIO 2:2",
+  "box": [
+   3496,
+   2104,
+   5580,
+   3064
+  ],
+  "w": 2084,
+  "h": 960,
+  "desc": "Woman in blue jacket laughing against red rock",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/video-thumb-blue-jacket.jpg",
+  "srcset": "assets/img/photos/video-thumb-blue-jacket-w1280.jpg 1280w, assets/img/photos/video-thumb-blue-jacket.jpg 2084w",
+  "ratio": 2.1708
+ },
+ "video-thumb-night-dive": {
+  "page": "VIDEO PORTFILIO 2:2",
+  "box": [
+   1372,
+   3120,
+   3452,
+   3544
+  ],
+  "w": 2080,
+  "h": 424,
+  "desc": "Night dive with torch light, dark blue (partial frame)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/video-thumb-night-dive.jpg",
+  "srcset": "assets/img/photos/video-thumb-night-dive-w1280.jpg 1280w, assets/img/photos/video-thumb-night-dive.jpg 2080w",
+  "ratio": 4.9057
+ },
+ "video-thumb-truck-cab": {
+  "page": "VIDEO PORTFILIO 2:2",
+  "box": [
+   3500,
+   3120,
+   5580,
+   3544
+  ],
+  "w": 2080,
+  "h": 424,
+  "desc": "Woman in a hat seen through a truck windscreen, mountains (partial frame)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/video-thumb-truck-cab.jpg",
+  "srcset": "assets/img/photos/video-thumb-truck-cab-w1280.jpg 1280w, assets/img/photos/video-thumb-truck-cab.jpg 2080w",
+  "ratio": 4.9057
+ },
+ "welcome-sam-landrover": {
+  "page": "WELCOME MESSAGE",
+  "box": [
+   0,
+   0,
+   1076,
+   1600
+  ],
+  "w": 1076,
+  "h": 1600,
+  "desc": "Sam crouching beside a Land Rover on a dirt road, warm light (welcome popup)",
+  "variants": [],
+  "src": "assets/img/photos/welcome-sam-landrover.jpg",
+  "srcset": "assets/img/photos/welcome-sam-landrover.jpg 1076w",
+  "ratio": 0.6725
+ },
+ "contact-campfire-snow": {
+  "page": "CONTACT POP",
+  "box": [
+   0,
+   0,
+   1088,
+   1600
+  ],
+  "w": 1088,
+  "h": 1600,
+  "desc": "Crew around a campfire in snow at night, handwritten caption (contact panel)",
+  "variants": [],
+  "src": "assets/img/photos/contact-campfire-snow.jpg",
+  "srcset": "assets/img/photos/contact-campfire-snow.jpg 1088w",
+  "ratio": 0.68
+ },
+ "about-hero-snow-truck": {
+  "page": "ABOUT",
+  "box": [
+   0,
+   544,
+   3000,
+   2434
+  ],
+  "w": 3000,
+  "h": 1890,
+  "desc": "Vintage Ford camper truck in a snowstorm (about hero)",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/about-hero-snow-truck.jpg",
+  "srcset": "assets/img/photos/about-hero-snow-truck-w1280.jpg 1280w, assets/img/photos/about-hero-snow-truck-w2000.jpg 2000w, assets/img/photos/about-hero-snow-truck.jpg 3000w",
+  "ratio": 1.5873
+ },
+ "about-tintype-landrover": {
+  "page": "ABOUT",
+  "box": [
+   1768,
+   3086,
+   2764,
+   4332
+  ],
+  "w": 996,
+  "h": 1246,
+  "desc": "Tintype-style photo of a Land Rover in snow",
+  "variants": [],
+  "src": "assets/img/photos/about-tintype-landrover.jpg",
+  "srcset": "assets/img/photos/about-tintype-landrover.jpg 996w",
+  "ratio": 0.7994
+ },
+ "about-arctic-band": {
+  "page": "ABOUT",
+  "box": [
+   0,
+   5030,
+   3000,
+   6878
+  ],
+  "w": 3000,
+  "h": 1848,
+  "desc": "Sam filming from a zodiac beside a glacier, Arctic",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/about-arctic-band.jpg",
+  "srcset": "assets/img/photos/about-arctic-band-w1280.jpg 1280w, assets/img/photos/about-arctic-band-w2000.jpg 2000w, assets/img/photos/about-arctic-band.jpg 3000w",
+  "ratio": 1.6234
+ },
+ "about-team-bw": {
+  "page": "ABOUT",
+  "box": [
+   1756,
+   7006,
+   2826,
+   7948
+  ],
+  "w": 1070,
+  "h": 942,
+  "desc": "Four climbers with headlamps at night, black and white",
+  "variants": [],
+  "src": "assets/img/photos/about-team-bw.jpg",
+  "srcset": "assets/img/photos/about-team-bw.jpg 1070w",
+  "ratio": 1.1359
+ },
+ "about-gear-flatlay": {
+  "page": "ABOUT",
+  "box": [
+   0,
+   8068,
+   3000,
+   9956
+  ],
+  "w": 3000,
+  "h": 1888,
+  "desc": "Overhead flat lay of expedition camera and camping gear on green",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/about-gear-flatlay.jpg",
+  "srcset": "assets/img/photos/about-gear-flatlay-w1280.jpg 1280w, assets/img/photos/about-gear-flatlay-w2000.jpg 2000w, assets/img/photos/about-gear-flatlay.jpg 3000w",
+  "ratio": 1.589
+ },
+ "about-offgrid-band": {
+  "page": "ABOUT",
+  "box": [
+   0,
+   10988,
+   3000,
+   12188
+  ],
+  "w": 3000,
+  "h": 1200,
+  "desc": "Barbed wire fence and a camper truck on a prairie road at sunset",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/about-offgrid-band.jpg",
+  "srcset": "assets/img/photos/about-offgrid-band-w1280.jpg 1280w, assets/img/photos/about-offgrid-band-w2000.jpg 2000w, assets/img/photos/about-offgrid-band.jpg 3000w",
+  "ratio": 2.5
+ },
+ "about-card-ford": {
+  "page": "ABOUT",
+  "box": [
+   388,
+   12242,
+   1482,
+   13642
+  ],
+  "w": 1094,
+  "h": 1400,
+  "desc": "Ford F250 camper vehicle card (tintype, with card text)",
+  "variants": [],
+  "src": "assets/img/photos/about-card-ford.jpg",
+  "srcset": "assets/img/photos/about-card-ford.jpg 1094w",
+  "ratio": 0.7814
+ },
+ "about-card-landrover": {
+  "page": "ABOUT",
+  "box": [
+   1494,
+   12242,
+   2586,
+   13638
+  ],
+  "w": 1092,
+  "h": 1396,
+  "desc": "Land Rover Defender TD5 overlander vehicle card (tintype, with card text)",
+  "variants": [],
+  "src": "assets/img/photos/about-card-landrover.jpg",
+  "srcset": "assets/img/photos/about-card-landrover.jpg 1092w",
+  "ratio": 0.7822
+ },
+ "about-miles-band": {
+  "page": "ABOUT",
+  "box": [
+   0,
+   14690,
+   3000,
+   16486
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Motion-blurred figure pushing a motorbike in sand, black and white",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/about-miles-band.jpg",
+  "srcset": "assets/img/photos/about-miles-band-w1280.jpg 1280w, assets/img/photos/about-miles-band-w2000.jpg 2000w, assets/img/photos/about-miles-band.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "about-dust-bw": {
+  "page": "ABOUT",
+  "box": [
+   106,
+   16578,
+   1652,
+   17574
+  ],
+  "w": 1546,
+  "h": 996,
+  "desc": "Photographers in a dust storm, black and white",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/about-dust-bw.jpg",
+  "srcset": "assets/img/photos/about-dust-bw-w1280.jpg 1280w, assets/img/photos/about-dust-bw.jpg 1546w",
+  "ratio": 1.5522
+ },
+ "about-sam-lightpainting": {
+  "page": "ABOUT",
+  "box": [
+   154,
+   18304,
+   666,
+   18816
+  ],
+  "w": 512,
+  "h": 512,
+  "desc": "Sam light-painting SAM in a dark room",
+  "variants": [],
+  "src": "assets/img/photos/about-sam-lightpainting.jpg",
+  "srcset": "assets/img/photos/about-sam-lightpainting.jpg 512w",
+  "ratio": 1.0
+ },
+ "about-sam-portrait": {
+  "page": "ABOUT",
+  "box": [
+   956,
+   18306,
+   1466,
+   18816
+  ],
+  "w": 510,
+  "h": 510,
+  "desc": "Sam portrait, black and white",
+  "variants": [],
+  "src": "assets/img/photos/about-sam-portrait.jpg",
+  "srcset": "assets/img/photos/about-sam-portrait.jpg 510w",
+  "ratio": 1.0
+ },
+ "about-sam-snow": {
+  "page": "ABOUT",
+  "box": [
+   1750,
+   18304,
+   2262,
+   18816
+  ],
+  "w": 512,
+  "h": 512,
+  "desc": "Sam in snow goggles, frost on face",
+  "variants": [],
+  "src": "assets/img/photos/about-sam-snow.jpg",
+  "srcset": "assets/img/photos/about-sam-snow.jpg 512w",
+  "ratio": 1.0
+ },
+ "about-sam-hooded": {
+  "page": "ABOUT",
+  "box": [
+   2552,
+   18304,
+   2862,
+   18816
+  ],
+  "w": 310,
+  "h": 512,
+  "desc": "Sam in a hooded jacket in falling snow",
+  "variants": [],
+  "src": "assets/img/photos/about-sam-hooded.jpg",
+  "srcset": "assets/img/photos/about-sam-hooded.jpg 310w",
+  "ratio": 0.6055
+ },
+ "arctic-hero-ship": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   514,
+   3000,
+   1846
+  ],
+  "w": 3000,
+  "h": 1332,
+  "desc": "Expedition ship among sea ice with mountains (Arctic project hero)",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-hero-ship.jpg",
+  "srcset": "assets/img/photos/arctic-hero-ship-w1280.jpg 1280w, assets/img/photos/arctic-hero-ship-w2000.jpg 2000w, assets/img/photos/arctic-hero-ship.jpg 3000w",
+  "ratio": 2.2523
+ },
+ "arctic-reindeer": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   112,
+   1972,
+   1006,
+   3486
+  ],
+  "w": 894,
+  "h": 1514,
+  "desc": "Two Svalbard reindeer on tundra",
+  "variants": [],
+  "src": "assets/img/photos/arctic-reindeer.jpg",
+  "srcset": "assets/img/photos/arctic-reindeer.jpg 894w",
+  "ratio": 0.5905
+ },
+ "arctic-couple-binoculars": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1978,
+   1972,
+   2872,
+   3486
+  ],
+  "w": 894,
+  "h": 1514,
+  "desc": "Couple with binoculars and long lens",
+  "variants": [],
+  "src": "assets/img/photos/arctic-couple-binoculars.jpg",
+  "srcset": "assets/img/photos/arctic-couple-binoculars.jpg 894w",
+  "ratio": 0.5905
+ },
+ "arctic-fjord": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   3704,
+   3000,
+   5512
+  ],
+  "w": 3000,
+  "h": 1808,
+  "desc": "Turquoise fjord with brown cliffs, expedition ship",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-fjord.jpg",
+  "srcset": "assets/img/photos/arctic-fjord-w1280.jpg 1280w, assets/img/photos/arctic-fjord-w2000.jpg 2000w, assets/img/photos/arctic-fjord.jpg 3000w",
+  "ratio": 1.6593
+ },
+ "arctic-ice-floes": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   5536,
+   1050,
+   6992
+  ],
+  "w": 1050,
+  "h": 1456,
+  "desc": "Aerial of ice floes in teal water",
+  "variants": [],
+  "src": "assets/img/photos/arctic-ice-floes.jpg",
+  "srcset": "assets/img/photos/arctic-ice-floes.jpg 1050w",
+  "ratio": 0.7212
+ },
+ "arctic-zodiac-ship": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   134,
+   7290,
+   1026,
+   7936
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Zodiac in front of expedition ship, blue",
+  "variants": [],
+  "src": "assets/img/photos/arctic-zodiac-ship.jpg",
+  "srcset": "assets/img/photos/arctic-zodiac-ship.jpg 892w",
+  "ratio": 1.3808
+ },
+ "arctic-glacier-wall": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1044,
+   7290,
+   1936,
+   7936
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Glacier ice wall close-up",
+  "variants": [],
+  "src": "assets/img/photos/arctic-glacier-wall.jpg",
+  "srcset": "assets/img/photos/arctic-glacier-wall.jpg 892w",
+  "ratio": 1.3808
+ },
+ "arctic-yellow-jacket": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1956,
+   7292,
+   2850,
+   7936
+  ],
+  "w": 894,
+  "h": 644,
+  "desc": "Woman in yellow rain jacket on deck",
+  "variants": [],
+  "src": "assets/img/photos/arctic-yellow-jacket.jpg",
+  "srcset": "assets/img/photos/arctic-yellow-jacket.jpg 894w",
+  "ratio": 1.3882
+ },
+ "arctic-glacier-boats": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   8190,
+   3000,
+   9988
+  ],
+  "w": 3000,
+  "h": 1798,
+  "desc": "Zodiacs in front of a glacier face",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-glacier-boats.jpg",
+  "srcset": "assets/img/photos/arctic-glacier-boats-w1280.jpg 1280w, assets/img/photos/arctic-glacier-boats-w2000.jpg 2000w, assets/img/photos/arctic-glacier-boats.jpg 3000w",
+  "ratio": 1.6685
+ },
+ "arctic-walrus": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   594,
+   10162,
+   1486,
+   11314
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Walrus close-up",
+  "variants": [],
+  "src": "assets/img/photos/arctic-walrus.jpg",
+  "srcset": "assets/img/photos/arctic-walrus.jpg 892w",
+  "ratio": 0.7743
+ },
+ "arctic-cliffs": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1514,
+   10166,
+   2406,
+   11318
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Bird cliffs striped rock",
+  "variants": [],
+  "src": "assets/img/photos/arctic-cliffs.jpg",
+  "srcset": "assets/img/photos/arctic-cliffs.jpg 892w",
+  "ratio": 0.7743
+ },
+ "arctic-mountains": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   11494,
+   3000,
+   13292
+  ],
+  "w": 3000,
+  "h": 1798,
+  "desc": "Snow-capped mountains and grey sea",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-mountains.jpg",
+  "srcset": "assets/img/photos/arctic-mountains-w1280.jpg 1280w, assets/img/photos/arctic-mountains-w2000.jpg 2000w, assets/img/photos/arctic-mountains.jpg 3000w",
+  "ratio": 1.6685
+ },
+ "arctic-red-jacket": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   594,
+   13404,
+   1486,
+   14556
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Man in red jacket on zodiac with pack",
+  "variants": [],
+  "src": "assets/img/photos/arctic-red-jacket.jpg",
+  "srcset": "assets/img/photos/arctic-red-jacket.jpg 892w",
+  "ratio": 0.7743
+ },
+ "arctic-scope": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1514,
+   13406,
+   2406,
+   14560
+  ],
+  "w": 892,
+  "h": 1154,
+  "desc": "Sea ice through a circular scope",
+  "variants": [],
+  "src": "assets/img/photos/arctic-scope.jpg",
+  "srcset": "assets/img/photos/arctic-scope.jpg 892w",
+  "ratio": 0.773
+ },
+ "arctic-cliffs-kayak": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   14698,
+   3000,
+   16586
+  ],
+  "w": 3000,
+  "h": 1888,
+  "desc": "Kayakers below dark cliffs",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-cliffs-kayak.jpg",
+  "srcset": "assets/img/photos/arctic-cliffs-kayak-w1280.jpg 1280w, assets/img/photos/arctic-cliffs-kayak-w2000.jpg 2000w, assets/img/photos/arctic-cliffs-kayak.jpg 3000w",
+  "ratio": 1.589
+ },
+ "arctic-rifle": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   118,
+   16868,
+   1010,
+   17932
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Expedition guide in red with rifle",
+  "variants": [],
+  "src": "assets/img/photos/arctic-rifle.jpg",
+  "srcset": "assets/img/photos/arctic-rifle.jpg 892w",
+  "ratio": 0.8383
+ },
+ "arctic-zodiacs-ice": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1054,
+   16868,
+   1946,
+   17932
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Aerial of zodiacs in icy water",
+  "variants": [],
+  "src": "assets/img/photos/arctic-zodiacs-ice.jpg",
+  "srcset": "assets/img/photos/arctic-zodiacs-ice.jpg 892w",
+  "ratio": 0.8383
+ },
+ "arctic-woman-ship": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1990,
+   16868,
+   2882,
+   17932
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Woman in life vest in front of ship",
+  "variants": [],
+  "src": "assets/img/photos/arctic-woman-ship.jpg",
+  "srcset": "assets/img/photos/arctic-woman-ship.jpg 892w",
+  "ratio": 0.8383
+ },
+ "arctic-ship-reflection": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   18228,
+   3000,
+   20024
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Expedition ship reflected in calm icy water",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-ship-reflection.jpg",
+  "srcset": "assets/img/photos/arctic-ship-reflection-w1280.jpg 1280w, assets/img/photos/arctic-ship-reflection-w2000.jpg 2000w, assets/img/photos/arctic-ship-reflection.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "arctic-ice-texture": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1952,
+   20038,
+   3000,
+   21494
+  ],
+  "w": 1048,
+  "h": 1456,
+  "desc": "Blue ice texture close-up",
+  "variants": [],
+  "src": "assets/img/photos/arctic-ice-texture.jpg",
+  "srcset": "assets/img/photos/arctic-ice-texture.jpg 1048w",
+  "ratio": 0.7198
+ },
+ "arctic-orange-jacket": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   134,
+   21670,
+   1026,
+   22316
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Man in orange puffer on deck",
+  "variants": [],
+  "src": "assets/img/photos/arctic-orange-jacket.jpg",
+  "srcset": "assets/img/photos/arctic-orange-jacket.jpg 892w",
+  "ratio": 1.3808
+ },
+ "arctic-ship-bow": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1044,
+   21670,
+   1936,
+   22316
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Ship bow through sea ice",
+  "variants": [],
+  "src": "assets/img/photos/arctic-ship-bow.jpg",
+  "srcset": "assets/img/photos/arctic-ship-bow.jpg 892w",
+  "ratio": 1.3808
+ },
+ "arctic-swimmer": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   1958,
+   21670,
+   2850,
+   22316
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Woman after a polar plunge",
+  "variants": [],
+  "src": "assets/img/photos/arctic-swimmer.jpg",
+  "srcset": "assets/img/photos/arctic-swimmer.jpg 892w",
+  "ratio": 1.3808
+ },
+ "arctic-mountains-bw": {
+  "page": "PROJECT TEMPLATE",
+  "box": [
+   0,
+   22366,
+   3000,
+   24158
+  ],
+  "w": 3000,
+  "h": 1792,
+  "desc": "Lone figure before arctic mountains, black and white",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/arctic-mountains-bw.jpg",
+  "srcset": "assets/img/photos/arctic-mountains-bw-w1280.jpg 1280w, assets/img/photos/arctic-mountains-bw-w2000.jpg 2000w, assets/img/photos/arctic-mountains-bw.jpg 3000w",
+  "ratio": 1.6741
+ },
+ "hunt-hero-diver": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   119,
+   632,
+   1704,
+   1573
+  ],
+  "w": 1585,
+  "h": 941,
+  "desc": "Freediver with speargun and fish, blue water (The Hunt hero)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/hunt-hero-diver.jpg",
+  "srcset": "assets/img/photos/hunt-hero-diver-w1280.jpg 1280w, assets/img/photos/hunt-hero-diver.jpg 1585w",
+  "ratio": 1.6844
+ },
+ "hunt-canoe-bw": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   434,
+   2452,
+   2598,
+   3742
+  ],
+  "w": 2164,
+  "h": 1290,
+  "desc": "Bajau elder paddling, black and white, palms",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/hunt-canoe-bw.jpg",
+  "srcset": "assets/img/photos/hunt-canoe-bw-w1280.jpg 1280w, assets/img/photos/hunt-canoe-bw.jpg 2164w",
+  "ratio": 1.6775
+ },
+ "hunt-village-girl": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   0,
+   3950,
+   1022,
+   5408
+  ],
+  "w": 1022,
+  "h": 1458,
+  "desc": "Girl standing on a stone wall in a stilt village",
+  "variants": [],
+  "src": "assets/img/photos/hunt-village-girl.jpg",
+  "srcset": "assets/img/photos/hunt-village-girl.jpg 1022w",
+  "ratio": 0.701
+ },
+ "hunt-hut-sleep": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   134,
+   5738,
+   1026,
+   6382
+  ],
+  "w": 892,
+  "h": 644,
+  "desc": "Sleeping mats inside a stilt hut",
+  "variants": [],
+  "src": "assets/img/photos/hunt-hut-sleep.jpg",
+  "srcset": "assets/img/photos/hunt-hut-sleep.jpg 892w",
+  "ratio": 1.3851
+ },
+ "hunt-village-aerial": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1044,
+   5738,
+   1936,
+   6382
+  ],
+  "w": 892,
+  "h": 644,
+  "desc": "Aerial of a Bajau stilt village",
+  "variants": [],
+  "src": "assets/img/photos/hunt-village-aerial.jpg",
+  "srcset": "assets/img/photos/hunt-village-aerial.jpg 892w",
+  "ratio": 1.3851
+ },
+ "hunt-kids-water": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1958,
+   5736,
+   2850,
+   6384
+  ],
+  "w": 892,
+  "h": 648,
+  "desc": "Two children laughing in the water",
+  "variants": [],
+  "src": "assets/img/photos/hunt-kids-water.jpg",
+  "srcset": "assets/img/photos/hunt-kids-water.jpg 892w",
+  "ratio": 1.3765
+ },
+ "hunt-two-men-bw": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   0,
+   6650,
+   3000,
+   8448
+  ],
+  "w": 3000,
+  "h": 1798,
+  "desc": "Two Bajau men clasping hands, black and white",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/hunt-two-men-bw.jpg",
+  "srcset": "assets/img/photos/hunt-two-men-bw-w1280.jpg 1280w, assets/img/photos/hunt-two-men-bw-w2000.jpg 2000w, assets/img/photos/hunt-two-men-bw.jpg 3000w",
+  "ratio": 1.6685
+ },
+ "hunt-kids-underwater": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   594,
+   8682,
+   1486,
+   9866
+  ],
+  "w": 892,
+  "h": 1184,
+  "desc": "Children diving underwater over coral",
+  "variants": [],
+  "src": "assets/img/photos/hunt-kids-underwater.jpg",
+  "srcset": "assets/img/photos/hunt-kids-underwater.jpg 892w",
+  "ratio": 0.7534
+ },
+ "hunt-selfie": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1514,
+   8686,
+   2406,
+   9866
+  ],
+  "w": 892,
+  "h": 1180,
+  "desc": "Sam and a Bajau boy in the sea, selfie",
+  "variants": [],
+  "src": "assets/img/photos/hunt-selfie.jpg",
+  "srcset": "assets/img/photos/hunt-selfie.jpg 892w",
+  "ratio": 0.7559
+ },
+ "hunt-spear-seagrass": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   0,
+   10858,
+   3000,
+   12654
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Spearfisher in seagrass, black and white",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/hunt-spear-seagrass.jpg",
+  "srcset": "assets/img/photos/hunt-spear-seagrass-w1280.jpg 1280w, assets/img/photos/hunt-spear-seagrass-w2000.jpg 2000w, assets/img/photos/hunt-spear-seagrass.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "hunt-hands-bw": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   594,
+   12842,
+   1486,
+   13994
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Weathered hands, black and white",
+  "variants": [],
+  "src": "assets/img/photos/hunt-hands-bw.jpg",
+  "srcset": "assets/img/photos/hunt-hands-bw.jpg 892w",
+  "ratio": 0.7743
+ },
+ "hunt-diver-bw": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1514,
+   12846,
+   2406,
+   13998
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Bajau diver over reef, black and white",
+  "variants": [],
+  "src": "assets/img/photos/hunt-diver-bw.jpg",
+  "srcset": "assets/img/photos/hunt-diver-bw.jpg 892w",
+  "ratio": 0.7743
+ },
+ "hunt-palms-sunset": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   0,
+   14136,
+   3000,
+   16024
+  ],
+  "w": 3000,
+  "h": 1888,
+  "desc": "Palm silhouettes over a pink sunset beach camp",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/hunt-palms-sunset.jpg",
+  "srcset": "assets/img/photos/hunt-palms-sunset-w1280.jpg 1280w, assets/img/photos/hunt-palms-sunset-w2000.jpg 2000w, assets/img/photos/hunt-palms-sunset.jpg 3000w",
+  "ratio": 1.589
+ },
+ "hunt-aerial-reef": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   118,
+   16860,
+   1010,
+   17924
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Aerial of canoes over reef",
+  "variants": [],
+  "src": "assets/img/photos/hunt-aerial-reef.jpg",
+  "srcset": "assets/img/photos/hunt-aerial-reef.jpg 892w",
+  "ratio": 0.8383
+ },
+ "hunt-under-boat": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1054,
+   16860,
+   1946,
+   17924
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Diver beneath a canoe hull",
+  "variants": [],
+  "src": "assets/img/photos/hunt-under-boat.jpg",
+  "srcset": "assets/img/photos/hunt-under-boat.jpg 892w",
+  "ratio": 0.8383
+ },
+ "hunt-spear-diver-blue": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1990,
+   16860,
+   2882,
+   17924
+  ],
+  "w": 892,
+  "h": 1064,
+  "desc": "Bajau spearfisher over coral, blue",
+  "variants": [],
+  "src": "assets/img/photos/hunt-spear-diver-blue.jpg",
+  "srcset": "assets/img/photos/hunt-spear-diver-blue.jpg 892w",
+  "ratio": 0.8383
+ },
+ "hunt-fire-boat": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   222,
+   18494,
+   3000,
+   20018
+  ],
+  "w": 2778,
+  "h": 1524,
+  "desc": "Burning a canoe hull at night, sparks",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/hunt-fire-boat.jpg",
+  "srcset": "assets/img/photos/hunt-fire-boat-w1280.jpg 1280w, assets/img/photos/hunt-fire-boat-w2000.jpg 2000w, assets/img/photos/hunt-fire-boat.jpg 2778w",
+  "ratio": 1.8228
+ },
+ "hunt-jago-portrait": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1950,
+   20028,
+   3000,
+   21486
+  ],
+  "w": 1050,
+  "h": 1458,
+  "desc": "Portrait of Jago in a conical hat",
+  "variants": [],
+  "src": "assets/img/photos/hunt-jago-portrait.jpg",
+  "srcset": "assets/img/photos/hunt-jago-portrait.jpg 1050w",
+  "ratio": 0.7202
+ },
+ "hunt-hut-girl": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   134,
+   21618,
+   1026,
+   22264
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Woman in a stilt hut with mosquito net",
+  "variants": [],
+  "src": "assets/img/photos/hunt-hut-girl.jpg",
+  "srcset": "assets/img/photos/hunt-hut-girl.jpg 892w",
+  "ratio": 1.3808
+ },
+ "hunt-beach-camp-tarp": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1956,
+   21618,
+   2850,
+   22264
+  ],
+  "w": 894,
+  "h": 646,
+  "desc": "Beach camp with tarp shelter",
+  "variants": [],
+  "src": "assets/img/photos/hunt-beach-camp-tarp.jpg",
+  "srcset": "assets/img/photos/hunt-beach-camp-tarp.jpg 894w",
+  "ratio": 1.3839
+ },
+ "hunt-night-dive": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   0,
+   22412,
+   3000,
+   24208
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Night dive silhouette with torch beam",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/hunt-night-dive.jpg",
+  "srcset": "assets/img/photos/hunt-night-dive-w1280.jpg 1280w, assets/img/photos/hunt-night-dive-w2000.jpg 2000w, assets/img/photos/hunt-night-dive.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "hunt-night-spear-bw": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   594,
+   24380,
+   1486,
+   25566
+  ],
+  "w": 892,
+  "h": 1186,
+  "desc": "Night spearfishing torch beam, black and white",
+  "variants": [],
+  "src": "assets/img/photos/hunt-night-spear-bw.jpg",
+  "srcset": "assets/img/photos/hunt-night-spear-bw.jpg 892w",
+  "ratio": 0.7521
+ },
+ "hunt-beach-jungle": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1514,
+   24384,
+   2406,
+   25566
+  ],
+  "w": 892,
+  "h": 1182,
+  "desc": "Beach and jungle from the water",
+  "variants": [],
+  "src": "assets/img/photos/hunt-beach-jungle.jpg",
+  "srcset": "assets/img/photos/hunt-beach-jungle.jpg 892w",
+  "ratio": 0.7547
+ },
+ "hunt-torch-man": {
+  "page": "BLOG TEMPLATE",
+  "box": [
+   1044,
+   21618,
+   1936,
+   22264
+  ],
+  "w": 892,
+  "h": 646,
+  "desc": "Man holding a fire torch at night",
+  "variants": [],
+  "src": "assets/img/photos/hunt-torch-man.jpg",
+  "srcset": "assets/img/photos/hunt-torch-man.jpg 892w",
+  "ratio": 1.3808
+ },
+ "c-reef-wall": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   0,
+   3000,
+   1790
+  ],
+  "w": 3000,
+  "h": 1790,
+  "desc": "Diver on a deep reef wall, blue",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/c-reef-wall.jpg",
+  "srcset": "assets/img/photos/c-reef-wall-w1280.jpg 1280w, assets/img/photos/c-reef-wall-w2000.jpg 2000w, assets/img/photos/c-reef-wall.jpg 3000w",
+  "ratio": 1.676
+ },
+ "c-diver-bubbles": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   418,
+   2138,
+   2582,
+   3428
+  ],
+  "w": 2164,
+  "h": 1290,
+  "desc": "Bajau diver surfacing through bubbles",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/c-diver-bubbles.jpg",
+  "srcset": "assets/img/photos/c-diver-bubbles-w1280.jpg 1280w, assets/img/photos/c-diver-bubbles.jpg 2164w",
+  "ratio": 1.6775
+ },
+ "c-spear-vertical": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   3950,
+   1022,
+   5406
+  ],
+  "w": 1022,
+  "h": 1456,
+  "desc": "Diver descending with a spear, blue",
+  "variants": [],
+  "src": "assets/img/photos/c-spear-vertical.jpg",
+  "srcset": "assets/img/photos/c-spear-vertical.jpg 1022w",
+  "ratio": 0.7019
+ },
+ "c-fish-cut": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   134,
+   5738,
+   1026,
+   6382
+  ],
+  "w": 892,
+  "h": 644,
+  "desc": "Cutting a fish on a wooden board",
+  "variants": [],
+  "src": "assets/img/photos/c-fish-cut.jpg",
+  "srcset": "assets/img/photos/c-fish-cut.jpg 892w",
+  "ratio": 1.3851
+ },
+ "c-leaves": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   1044,
+   5736,
+   1936,
+   6384
+  ],
+  "w": 892,
+  "h": 648,
+  "desc": "Tropical green leaves close-up",
+  "variants": [],
+  "src": "assets/img/photos/c-leaves.jpg",
+  "srcset": "assets/img/photos/c-leaves.jpg 892w",
+  "ratio": 1.3765
+ },
+ "c-cooked-fish": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   1956,
+   5736,
+   2850,
+   6384
+  ],
+  "w": 894,
+  "h": 648,
+  "desc": "Cooked fish in a metal bowl",
+  "variants": [],
+  "src": "assets/img/photos/c-cooked-fish.jpg",
+  "srcset": "assets/img/photos/c-cooked-fish.jpg 894w",
+  "ratio": 1.3796
+ },
+ "c-island-aerial": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   6650,
+   3000,
+   8448
+  ],
+  "w": 3000,
+  "h": 1798,
+  "desc": "Aerial of a jungle island and reef",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/c-island-aerial.jpg",
+  "srcset": "assets/img/photos/c-island-aerial-w1280.jpg 1280w, assets/img/photos/c-island-aerial-w2000.jpg 2000w, assets/img/photos/c-island-aerial.jpg 3000w",
+  "ratio": 1.6685
+ },
+ "c-beach-camp": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   594,
+   8680,
+   1486,
+   9866
+  ],
+  "w": 892,
+  "h": 1186,
+  "desc": "Beach camp under limestone cliff",
+  "variants": [],
+  "src": "assets/img/photos/c-beach-camp.jpg",
+  "srcset": "assets/img/photos/c-beach-camp.jpg 892w",
+  "ratio": 0.7521
+ },
+ "c-fish-scale": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   1516,
+   8686,
+   2406,
+   9866
+  ],
+  "w": 890,
+  "h": 1180,
+  "desc": "Fish fin and scales close-up",
+  "variants": [],
+  "src": "assets/img/photos/c-fish-scale.jpg",
+  "srcset": "assets/img/photos/c-fish-scale.jpg 890w",
+  "ratio": 0.7542
+ },
+ "c-boat-over-under": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   10858,
+   3000,
+   12654
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Outrigger boat, over-under water shot",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/c-boat-over-under.jpg",
+  "srcset": "assets/img/photos/c-boat-over-under-w1280.jpg 1280w, assets/img/photos/c-boat-over-under-w2000.jpg 2000w, assets/img/photos/c-boat-over-under.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "c-cave-fire": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   594,
+   12842,
+   1486,
+   13994
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Fire in a sea cave at dusk with boat",
+  "variants": [],
+  "src": "assets/img/photos/c-cave-fire.jpg",
+  "srcset": "assets/img/photos/c-cave-fire.jpg 892w",
+  "ratio": 0.7743
+ },
+ "c-diver-blue": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   1514,
+   12846,
+   2406,
+   13998
+  ],
+  "w": 892,
+  "h": 1152,
+  "desc": "Freediver in a wetsuit with speargun, blue",
+  "variants": [],
+  "src": "assets/img/photos/c-diver-blue.jpg",
+  "srcset": "assets/img/photos/c-diver-blue.jpg 892w",
+  "ratio": 0.7743
+ },
+ "c-old-man-bw": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   14190,
+   3000,
+   16076
+  ],
+  "w": 3000,
+  "h": 1886,
+  "desc": "Bajau elder in canoe, water level, black and white",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/c-old-man-bw.jpg",
+  "srcset": "assets/img/photos/c-old-man-bw-w1280.jpg 1280w, assets/img/photos/c-old-man-bw-w2000.jpg 2000w, assets/img/photos/c-old-man-bw.jpg 3000w",
+  "ratio": 1.5907
+ },
+ "c-beach-boat": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   0,
+   18220,
+   3000,
+   20016
+  ],
+  "w": 3000,
+  "h": 1796,
+  "desc": "Beach with outrigger boat and green water",
+  "variants": [
+   1280,
+   2000
+  ],
+  "src": "assets/img/photos/c-beach-boat.jpg",
+  "srcset": "assets/img/photos/c-beach-boat-w1280.jpg 1280w, assets/img/photos/c-beach-boat-w2000.jpg 2000w, assets/img/photos/c-beach-boat.jpg 3000w",
+  "ratio": 1.6704
+ },
+ "c-van-forest": {
+  "page": "BLOG TEMPLATE C",
+  "box": [
+   138,
+   22470,
+   1644,
+   23100
+  ],
+  "w": 1506,
+  "h": 630,
+  "desc": "Blue VW van on a misty forest road",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/c-van-forest.jpg",
+  "srcset": "assets/img/photos/c-van-forest-w1280.jpg 1280w, assets/img/photos/c-van-forest.jpg 1506w",
+  "ratio": 2.3905
+ },
+ "product-headlamp-detail": {
+  "page": "ECOMMERCE PRODUCT.tif",
+  "box": [
+   0,
+   0,
+   1500,
+   1500
+  ],
+  "w": 1500,
+  "h": 1500,
+  "desc": "Black Diamond headlamp product shot on sand (product detail)",
+  "variants": [
+   1280
+  ],
+  "src": "assets/img/photos/product-headlamp-detail.jpg",
+  "srcset": "assets/img/photos/product-headlamp-detail-w1280.jpg 1280w, assets/img/photos/product-headlamp-detail.jpg 1500w",
+  "ratio": 1.0
+ },
+ "product-sleeping-bag": {
+  "page": "GENERAL STORE",
+  "box": [
+   668,
+   4179,
+   1219,
+   5447
+  ],
+  "w": 551,
+  "h": 1268,
+  "desc": "Sea to Summit Spark Pro sleeping bag on sand",
+  "variants": [],
+  "src": "assets/img/photos/product-sleeping-bag.jpg",
+  "srcset": "assets/img/photos/product-sleeping-bag.jpg 551w",
+  "ratio": 0.4345
+ }
+}
