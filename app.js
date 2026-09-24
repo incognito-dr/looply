@@ -106,8 +106,33 @@ function circlePlan(n, k, rounds) {
   }
   return out;
 }
+/* Torneo "whist" cíclico sobre Z(n-1) ∪ {∞}: compañero 1 vez y rival exactamente 2 veces con cada uno. */
+function whistPlan(n, ms = 700) {
+  const m = n - 1, INF = m, half = Math.floor(m / 2), t0 = performance.now();
+  const d = (x, y) => { const t = ((x - y) % m + m) % m; return Math.min(t, m - t); };
+  while (performance.now() - t0 < ms) {
+    const p = shuffle([...Array(n).keys()]), pc = new Array(half + 1).fill(0), oc = new Array(half + 1).fill(0);
+    let infP = 0, infO = 0, ok = true;
+    for (let t = 0; t < n / 4 && ok; t++) {
+      const [a0, a1, b0, b1] = p.slice(t * 4, t * 4 + 4);
+      for (const [x, y] of [[a0, a1], [b0, b1]]) { if (x === INF || y === INF) infP++; else if (++pc[d(x, y)] > 1) ok = false; }
+      for (const x of [a0, a1]) for (const y of [b0, b1]) { if (x === INF || y === INF) infO++; else if (++oc[d(x, y)] > 2) ok = false; }
+    }
+    if (!ok || infP !== 1 || infO !== 2) continue;
+    let good = true; for (let k = 1; k <= half; k++) if (pc[k] !== 1 || oc[k] !== 2) good = false;
+    if (!good) continue;
+    const map = shuffle([...Array(n).keys()]), rounds = [];
+    for (let r = 0; r < m; r++) {
+      const q = p.map(x => map[x === INF ? INF : (x + r) % m]);
+      rounds.push({ matches: Array.from({ length: n / 4 }, (_, t) => [[q[t * 4], q[t * 4 + 1]], [q[t * 4 + 2], q[t * 4 + 3]]]), rest: [] });
+    }
+    return shuffle(rounds);
+  }
+  return null;
+}
 function planAmericano(n, courts, rounds) {
   const k = Math.min(courts, Math.floor(n / 4)), per = k * 4, t0 = performance.now();
+  if (per === n && n % 4 === 0 && rounds === n - 1) { const w = whistPlan(n); if (w) return w; }
   let best = null, bc = Infinity;
   for (let t = 0; t < 2000 && performance.now() - t0 < 600; t++) {
     const plan = (per === n && n % 2 === 0 && t % 2 === 0) ? circlePlan(n, k, rounds) : greedyPlan(n, k, rounds);
