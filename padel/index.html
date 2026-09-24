@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Padel Brositos</title>
+<meta name="description" content="Americano de pádel: rondas, resultados y tabla en vivo.">
+<meta name="theme-color" content="#1F4FD1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Brositos">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-lines" aria-hidden="true"></div>
+  <a class="brand" href="./" aria-label="Padel Brositos, inicio">
+    <svg class="logo" viewBox="0 0 312 124" role="img" aria-hidden="true">
+      <g class="logo-tilt">
+        <rect x="10" y="14" width="290" height="96" rx="20" fill="#DCFF3D" transform="translate(6 7)"/>
+        <rect x="10" y="14" width="290" height="96" rx="20" fill="#0B1733" stroke="#fff" stroke-width="3"/>
+        <!-- pala -->
+        <g transform="rotate(-28 58 64)">
+          <path d="M58 20c17 0 29 13 29 30 0 14-8 24-18 30l-3 9h-16l-3-9c-10-6-18-16-18-30 0-17 12-30 29-30z" fill="#1F4FD1" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+          <g fill="#0B1733">
+            <circle cx="48" cy="36" r="2.6"/><circle cx="58" cy="33" r="2.6"/><circle cx="68" cy="36" r="2.6"/>
+            <circle cx="43" cy="46" r="2.6"/><circle cx="53" cy="44" r="2.6"/><circle cx="63" cy="44" r="2.6"/><circle cx="73" cy="46" r="2.6"/>
+            <circle cx="45" cy="56" r="2.6"/><circle cx="55" cy="54" r="2.6"/><circle cx="65" cy="54" r="2.6"/><circle cx="71" cy="57" r="2.6"/>
+            <circle cx="52" cy="64" r="2.6"/><circle cx="62" cy="64" r="2.6"/>
+          </g>
+          <rect x="52" y="88" width="12" height="26" rx="4" fill="#fff"/>
+          <path d="M52 95h12M52 101h12M52 107h12" stroke="#0B1733" stroke-width="1.6"/>
+        </g>
+        <!-- bola con estela -->
+        <path d="M84 96h-14M86 89h-10M84 103h-8" stroke="#DCFF3D" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+        <circle cx="96" cy="94" r="11" fill="#DCFF3D" stroke="#0B1733" stroke-width="2.5"/>
+        <path d="M87.5 87.5c5 3 5 10 0 13.5M104.5 87.5c-5 3-5 10 0 13.5" fill="none" stroke="#0B1733" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- texto -->
+        <text x="116" y="50" class="logo-small" fill="#DCFF3D" textLength="92" lengthAdjust="spacingAndGlyphs">PADEL</text>
+        <text x="113" y="92" class="logo-big" fill="#fff" textLength="176" lengthAdjust="spacingAndGlyphs">BROSITOS</text>
+        <g fill="#DCFF3D"><path d="M226 30l2.2 6.3 6.3 2.2-6.3 2.2-2.2 6.3-2.2-6.3-6.3-2.2 6.3-2.2z"/></g>
+      </g>
+    </svg>
+  </a>
+  <button class="live" id="live" type="button" data-act="goto" data-tab="torneo" aria-live="polite"></button>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav class="tabs" aria-label="Secciones">
+  <button type="button" data-act="tab" data-tab="partidos">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16M3 12h5M16 12h5"/></svg>
+    <span>Partidos</span>
+  </button>
+  <button type="button" data-act="tab" data-tab="tabla">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V5M19 20v-6"/><path d="M3 20h18"/></svg>
+    <span>Tabla</span>
+  </button>
+  <button type="button" data-act="tab" data-tab="torneo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+    <span>Torneo</span>
+  </button>
+</nav>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-scrim" data-act="close"></div>
+  <div class="sheet-panel" role="dialog" aria-modal="true" id="sheetPanel"></div>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
