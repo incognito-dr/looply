@@ -240,6 +240,14 @@ async function flush() {
 function receive(data) {
   let next = data;
   for (const op of queue) next = applyOp(clone(next), op);
+  const first = !net.loaded; net.loaded = true;
+  const lleno = d => !!(d && d.torneo && d.torneo.nombre && d.partidos && d.partidos.length);
+  if (!lleno(S) && lleno(next) && (!ui.form || ui.formAuto)) {
+    ui.form = null; ui.formAuto = false; ui.ronda = null;
+    ui.tab = 'partidos'; store.set('tab', 'partidos');
+    S = next; save(); render(); return;
+  }
+  if (first && JSON.stringify(next) === JSON.stringify(S)) { render(); return; }
   if (JSON.stringify(next) !== JSON.stringify(S)) {
     const before = S;
     S = next; save();
@@ -405,6 +413,7 @@ function vTabla() {
 
 function vTorneo() {
   const conn = vConexion();
+  if (!hasT() && scriptUrl && !net.loaded && !queue.length) return `<div class="empty-state">${courtSVG}<h1 class="h1">Cargando el torneo</h1><p class="sub">Buscando los datos en el Sheet…</p></div>`;
   if (!hasT() || ui.form) return vForm() + conn;
   const t = S.torneo, doneN = S.partidos.filter(done).length;
   return `
@@ -434,7 +443,8 @@ function defaultForm() {
   return { nombre: 'Americano Brositos', formato: 'americano', jugadores: prevNames, canchas: hasT() ? S.torneo.canchas : Math.max(1, Math.min(8, Math.floor(n / 4))), puntos: 16, rondas: 0, playoff: true, puntosSemi: 24, rondasTocadas: false, clave: '' };
 }
 function vForm() {
-  const f = ui.form || (ui.form = defaultForm());
+  if (!ui.form) { ui.form = defaultForm(); ui.formAuto = !hasT(); }
+  const f = ui.form;
   const n = f.jugadores.length;
   if (!f.rondasTocadas) f.rondas = suggestRounds(n, f.canchas, f.formato);
   const per = Math.min(f.canchas, Math.floor(n / 4)) * 4, rest = n - per;
@@ -697,7 +707,7 @@ document.addEventListener('click', e => {
       share(txt, shareUrl()); break;
     }
     case 'share': share(`🎾 ${S.torneo.nombre}: rondas y tabla en vivo`, shareUrl()); break;
-    case 'newForm': ui.form = defaultForm(); render(); scrollTo(0, 0); break;
+    case 'newForm': ui.form = defaultForm(); ui.formAuto = false; render(); scrollTo(0, 0); break;
     case 'cancelForm': ui.form = null; render(); break;
     case 'fset': {
       const k = el.dataset.k; f[k] = k === 'puntos' || k === 'puntosSemi' ? +el.dataset.v : k === 'playoff' ? !!el.dataset.v : el.dataset.v;
@@ -782,7 +792,7 @@ function create() {
   if (clave) { pin = clave; store.set('pin', pin); }
   store.set('lastPlayers', names);
   const op = { a: 'setup', torneo, jugadores: names, partidos, nuevaClave: clave };
-  ui.form = null; ui.ronda = 1; ui.tab = 'partidos'; store.set('tab', 'partidos');
+  ui.form = null; ui.formAuto = false; ui.ronda = 1; ui.tab = 'partidos'; store.set('tab', 'partidos');
   commit(op);
   if (clave && S) S.protegido = true;
   scrollTo(0, 0); toast(f.formato === 'americano' ? `${torneo.rondas} rondas armadas` : 'Ronda 1 armada');
