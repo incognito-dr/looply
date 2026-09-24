@@ -1,54 +1,35 @@
-# Sam Hesketh Creative — website
+# Padel Brositos
 
-Static site, no build step. Upload the whole folder to any web host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, cPanel, S3) and point the domain at it. `index.html` is the home page.
+Herramienta móvil para torneos americano y mexicano de pádel. Arma las rondas, anota resultados con un toque y muestra la tabla en vivo. Los datos viven en un Google Sheet.
 
-## Folder layout
+Sitio estático (HTML, CSS y JS, sin build). Se publica con GitHub Pages.
 
+## Qué hace
+
+- **Americano**: arma todas las rondas desde el inicio. Con 8, 12, 16… jugadores y una cancha por cada 4, cada uno juega una vez con cada compañero. Con descansos, se reparten parejo y se evita descansar dos rondas seguidas.
+- **Mexicano**: ronda 1 al azar; desde la 2, cada grupo de 4 según la tabla juega 1.º y 4.º contra 2.º y 3.º.
+- Partidos a 16, 21, 24 o 32 puntos (la otra pareja se completa sola) o puntos libres.
+- Tabla con puntos, ganados, diferencia y flechas de subida o bajada; ficha de cada jugador con sus partidos.
+- Podio con confeti al terminar, reloj de ronda que vibra, compartir la tabla por WhatsApp.
+- Clave opcional para anotar: todos ven, solo el organizador escribe.
+- Sin Sheet funciona igual, guardado en el teléfono.
+
+## Conectar el Google Sheet
+
+1. Crea un Google Sheet vacío (por ejemplo "Padel Brositos").
+2. **Extensiones → Apps Script**. Borra lo que haya y pega el contenido de [`apps-script/Code.gs`](apps-script/Code.gs). Guarda.
+3. **Implementar → Nueva implementación → Aplicación web**.
+   - Ejecutar como: **Yo**
+   - Quién tiene acceso: **Cualquier usuario**
+4. Autoriza los permisos y copia la URL que termina en `/exec`.
+5. Pégala en `config.js` (`SCRIPT_URL`) y sube el cambio. También se puede pegar desde la app en **Torneo → Google Sheet** sin tocar el código.
+
+El script crea las pestañas `torneo`, `jugadores`, `partidos` y `tabla`. Cada torneo nuevo guarda el anterior en una pestaña `archivo …`. Si corriges un resultado a mano en `partidos`, la tabla y la web se actualizan solas.
+
+Si cambias `Code.gs`, publica una versión nueva en **Implementar → Administrar implementaciones → Editar → Versión nueva** (la URL no cambia).
+
+## Local
+
+```bash
+python3 -m http.server 5178
 ```
-index.html                 Landing (nav over the hero, welcome message, contact drawer)
-gun-for-hire.html          Motion / Photography panels, feature projects, expedition feature
-motion.html                Film portfolio (dark)
-photography.html           Photo portfolio with category list
-tradecraft.html            Expedition feature, Project Log sign-up, poster wall
-project-arctic.html        Client project case study (Arctic / Jalan Jalan)
-about.html                 About, kit lists, vehicles, Trusted by, timeline
-notebook.html              Wildland Journals index
-journal-the-hunt.html      Journal article (blue variant)
-journal-ten-years.html     Journal article (green variant)
-general-store.html         Ferneaux Outfitters store
-product.html               Product detail page
-privacy.html / terms.html  Legal
-assets/css/fonts.css       @font-face declarations (all fonts self-hosted)
-assets/css/site.css        Design system and components
-assets/css/pages/*.css     Page-specific styles
-assets/js/site.js          Nav, welcome modal, contact drawer, lightbox, filters, forms
-assets/fonts/              PP Nikkei Maru, PP Rader, GT Pressura, PP Supply Mono, PP Editorial Old, ED Medimont, Nothing You Could Do
-assets/img/brand/          Hobo-sign icons, lockups, stickers, flags, Australia map
-assets/img/photos/         Photography (see below)
-```
-
-## Photos and quality
-
-Every photograph was cut from the designer's mockups at native resolution (up to 6000 px wide) and saved at JPEG quality 92 with full chroma (no 4:2:0 subsampling), so nothing is soft or blocky. For each master there are responsive copies (`-w1280`, `-w2000`, `-w2880`, quality 86) and the pages use `srcset`, so phones download a small file and large or retina screens get the full-resolution master. To swap a photo, replace the master and its `-wNNNN` copies with the same names, or drop the `-w` files and delete the `srcset` attribute for that image.
-
-The hero plates had the mockup type baked into the pixels; that type was removed with an inpainting model so the headlines are live, editable HTML text.
-
-`assets/img/photos/manifest.json` lists every image with its size, description and which mockup it came from.
-
-## Things to fill in before launch
-
-- Films: on `motion.html` (and any `data-video=""` attribute) paste a YouTube or Vimeo URL into `data-video`. The lightbox embeds it automatically.
-- Forms: the contact drawer and the Project Log sign-up post to `https://formsubmit.co/info@samuelhesketh.com`. The first submission triggers a one-time activation email from FormSubmit to that inbox. To use another service (Netlify Forms, Basin, your own endpoint) change the form `action`.
-- Social links in the footer (Instagram, YouTube, LinkedIn) currently point at the platform home pages.
-- Store: product pages link to the contact drawer instead of a cart. Connect Shopify Buy Buttons, Snipcart or similar when the shop goes live.
-- The welcome message opens once per browser session on the home page (`data-auto` on `#welcome` in `index.html`). Remove that attribute to disable it.
-
-## Fonts
-
-All brand fonts are self-hosted from the brand kit. The handwritten quotes use Nothing You Could Do (Open Font License) as a stand-in for August July, which was not in the kit; if you own August July, add its woff2 to `assets/fonts/` and update the last `@font-face` in `fonts.css`.
-
-## Hosting notes
-
-- Serve with gzip/brotli and long cache headers for `/assets/` (fonts and photos never change names unless you replace them).
-- The site is plain HTML, so `https://yourdomain.com/about.html` style URLs are the defaults. Most hosts can drop the `.html` (Netlify "pretty URLs", Cloudflare Pages does it automatically).
-- No cookies, no analytics, no third-party scripts are loaded.
