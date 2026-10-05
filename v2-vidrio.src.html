@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARDE</title>
+<meta name="description" content="ARDE. Santo Domingo.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml;utf8,{{FAVICON}}">
+<style>
+@font-face{font-family:"Mono";src:url(data:font/ttf;base64,{{F_MONO}}) format("truetype");font-weight:100 800;font-stretch:75% 112.5%;font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#000;color:#cfcac2;overflow:hidden;-webkit-font-smoothing:antialiased}
+body{font:400 12px/1.4 "Mono",ui-monospace,monospace;font-stretch:87.5%}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+.ui{position:fixed;inset:0;pointer-events:none;opacity:0;transition:opacity 2.4s ease 1.2s}
+body.ready .ui{opacity:1}
+.wm{position:absolute;left:clamp(20px,3vw,48px);top:clamp(20px,3.4vh,40px);width:clamp(64px,5.4vw,88px);color:#e9e5de}
+.tr{position:absolute;right:clamp(20px,3vw,48px);top:clamp(20px,3.4vh,40px);text-align:right;color:#8c8780}
+.bl{position:absolute;left:clamp(20px,3vw,48px);bottom:clamp(20px,3.4vh,40px)}
+.br{position:absolute;right:clamp(20px,3vw,48px);bottom:clamp(20px,3.4vh,40px);text-align:right;color:#8c8780;font-variant-numeric:tabular-nums}
+.state{color:#e9e5de}
+.state i{font-style:normal;color:#EC0529;font-variant-numeric:tabular-nums}
+.line{position:absolute;left:0;bottom:0;height:1px;background:#EC0529;width:0;transition:width 1.2s linear;opacity:.9}
+.vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,transparent 55%,rgba(0,0,0,.75) 100%)}
+.grain{position:fixed;inset:-50%;pointer-events:none;opacity:.06;mix-blend-mode:screen;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation:g .6s steps(2) infinite}
+@keyframes g{0%{transform:translate(0,0)}50%{transform:translate(-3%,2%)}}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="vig"></div>
+<div class="grain"></div>
+<div class="ui">
+  <div class="wm">{{WM}}</div>
+  <div class="tr">santo domingo</div>
+  <div class="bl state"><span id="st">encendiendo</span> <i id="pc">00</i></div>
+  <div class="br" id="clock">00:00</div>
+  <div class="line" id="line"></div>
+</div>
+
+<script>
+(function(){
+  var ICON=new Path2D("{{ICON_D}}"), VB=[{{ICON_VB}}];
+  var cv=document.getElementById('c'),ctx=cv.getContext('2d'),buf=document.createElement('canvas'),b=buf.getContext('2d');
+  var W,H,DPR,REED;
+  function size(){
+    DPR=Math.min(2,window.devicePixelRatio||1);W=innerWidth;H=innerHeight;
+    cv.width=W*DPR;cv.height=H*DPR;buf.width=cv.width;buf.height=cv.height;
+    REED=Math.max(18,Math.round(Math.min(W,H)/26))*DPR;
+  }
+  addEventListener('resize',size);size();
+
+  var t0=performance.now(),mx=.5,my=.5,tx=.5,ty=.5;
+  addEventListener('pointermove',function(e){tx=e.clientX/W;ty=e.clientY/H});
+
+  function paintLight(blur,glow,breath){
+    var w=buf.width,h=buf.height;
+    b.setTransform(1,0,0,1,0,0);b.filter='none';b.globalCompositeOperation='source-over';
+    b.fillStyle='#000';b.fillRect(0,0,w,h);
+    // wide ambient red
+    var g=b.createRadialGradient(w*(.5+(mx-.5)*.06),h*(.5+(my-.5)*.06),0,w/2,h/2,Math.max(w,h)*.62);
+    g.addColorStop(0,'rgba(120,0,14,'+(.55*glow)+')');g.addColorStop(1,'rgba(0,0,0,0)');
+    b.fillStyle=g;b.fillRect(0,0,w,h);
+    // logo
+    var s=Math.min(w,h)*.62/VB[3]*(1+breath*.015);
+    var ox=w/2-(VB[2]*s)/2+(mx-.5)*w*.03, oy=h/2-(VB[3]*s)/2+(my-.5)*h*.03;
+    function logo(color,bl,alpha){
+      b.save();b.globalAlpha=alpha;b.filter='blur('+(bl*DPR)+'px)';
+      b.translate(ox,oy);b.scale(s,s);b.translate(-VB[0],-VB[1]);b.fillStyle=color;b.fill(ICON);b.restore();
+    }
+    b.globalCompositeOperation='lighter';
+    logo('#EC0529',blur*2.4,.85*glow);
+    logo('#EC0529',blur,1*glow);
+    logo('#ff9aa6',blur*.55,.55*glow);
+  }
+
+  function reeds(){
+    var w=cv.width,h=cv.height,r=REED;
+    ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);
+    // each reed magnifies a narrower strip of the light behind it (refraction)
+    for(var x=0;x<w;x+=r){
+      var c=x+r/2,sw=r*.42;
+      ctx.drawImage(buf,c-sw/2,0,sw,h,x,0,r,h);
+    }
+    // reed shading: dark edges, soft highlight
+    for(var x2=0;x2<w;x2+=r){
+      var gr=ctx.createLinearGradient(x2,0,x2+r,0);
+      gr.addColorStop(0,'rgba(0,0,0,.55)');gr.addColorStop(.18,'rgba(0,0,0,0)');
+      gr.addColorStop(.32,'rgba(255,220,225,.05)');gr.addColorStop(.7,'rgba(0,0,0,0)');gr.addColorStop(1,'rgba(0,0,0,.6)');
+      ctx.fillStyle=gr;ctx.fillRect(x2,0,r,h);
+    }
+  }
+
+  // progress: slow, eased, never 100
+  var pc=document.getElementById('pc'),line=document.getElementById('line'),st=document.getElementById('st');
+  var P=0,held=false;
+  function progress(sec){
+    var p=99*(1-Math.exp(-sec/26));
+    if(p>=98.5){p=99;if(!held){held=true;st.textContent='todavía no'}}
+    if(Math.floor(p)!==P){P=Math.floor(p);pc.textContent=String(P).padStart(2,'0');line.style.width=(P)+'%'}
+  }
+
+  function frame(now){
+    var sec=(now-t0)/1000;
+    mx+=(tx-mx)*.04;my+=(ty-my)*.04;
+    var focus=Math.min(1,sec/40);                     // pulls focus over ~40s but never sharp
+    var breath=Math.sin(sec*1.1)*.5+.5;               // heartbeat-ish
+    var flick=Math.random()<.006?.55:1;               // rare light flicker
+    var glow=Math.min(1,sec/3.2)*(.82+.18*breath)*flick;
+    var blur=(42-26*focus)*(Math.min(W,H)/900)+breath*3;
+    paintLight(blur,glow,breath);reeds();progress(sec);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  setTimeout(function(){document.body.classList.add('ready')},50);
+
+  function tick(){var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Santo_Domingo'}));
+    document.getElementById('clock').textContent=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+  tick();setInterval(tick,10000);
+})();
+</script>
+</body>
+</html>

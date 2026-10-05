@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ARDE</title>
+<meta name="description" content="todavía no.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml;utf8,{{FAVICON}}">
+<style>
+@font-face{font-family:"Termina";src:url(data:font/otf;base64,{{F_TERM}}) format("opentype");font-display:block}
+:root{--red:#EC0529}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#000;overflow:hidden;-webkit-font-smoothing:antialiased}
+body{font:400 14px/1.3 "Termina",sans-serif;color:var(--red)}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+.grain{position:fixed;inset:-50%;pointer-events:none;background:url(data:image/png;base64,{{GRAIN}});background-size:320px;opacity:.5;animation:g .5s steps(2) infinite}
+@keyframes g{0%{transform:translate(0,0)}50%{transform:translate(-2%,1.5%)}}
+.ui{position:fixed;inset:0;pointer-events:none;opacity:0;transition:opacity 2s ease .8s}
+body.ready .ui{opacity:1}
+.m{--m:clamp(22px,3.2vw,56px)}
+.wm{position:absolute;left:var(--m);top:var(--m);width:clamp(70px,6vw,104px);color:var(--red)}
+.tr{position:absolute;right:var(--m);top:var(--m);font-size:clamp(11px,.85vw,14px);letter-spacing:.01em}
+.state{position:absolute;left:var(--m);bottom:var(--m);font-size:clamp(20px,2.1vw,34px);line-height:1;letter-spacing:-.01em}
+.clock{position:absolute;right:var(--m);bottom:var(--m);font-size:clamp(11px,.85vw,14px);font-variant-numeric:tabular-nums}
+.line{position:absolute;left:0;bottom:0;height:2px;background:var(--red);width:0}
+.line::after{content:"";position:absolute;top:0;height:100%;background:var(--red);opacity:0;left:var(--gx,0);width:var(--gw,0)}
+.line.gl{animation:lg .32s steps(1) forwards}
+.line.gl::after{animation:lga .32s steps(1) forwards}
+@keyframes lg{0%{transform:translate(-14px,0);height:4px;opacity:.9}20%{transform:translate(9px,-3px);height:2px;opacity:.35}40%{transform:translate(-5px,2px);height:6px;opacity:1}60%{transform:translate(18px,0);height:1px;opacity:.6}80%{transform:translate(-2px,-1px);height:3px;opacity:1}100%{transform:none;height:2px;opacity:1}}
+@keyframes lga{0%{opacity:.8;transform:translateY(-7px)}25%{opacity:0}50%{opacity:.6;transform:translateY(-14px)}75%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="grain"></div>
+<div class="ui m">
+  <div class="wm">{{WM}}</div>
+  <div class="tr">@ardeotravez</div>
+  <div class="state" id="st">todavía no.</div>
+  <div class="clock" id="clock">00:00</div>
+  <div class="line" id="line"></div>
+</div>
+<script>
+(function(){
+  var ICON=new Path2D("{{ICON_D}}"),VB=[{{ICON_VB}}];
+  var cv=document.getElementById('c'),ctx=cv.getContext('2d'),buf=document.createElement('canvas'),b=buf.getContext('2d');
+  var W,H,DPR,REED,S;
+  function size(){
+    DPR=Math.min(2,window.devicePixelRatio||1);W=innerWidth;H=innerHeight;
+    cv.width=Math.round(W*DPR);cv.height=Math.round(H*DPR);buf.width=cv.width;buf.height=cv.height;
+    S=Math.min(W,H);
+    REED=Math.max(10,Math.round(S/44))*DPR;
+  }
+  addEventListener('resize',size);size();
+  var t0=performance.now(),last=t0,mx=.5,my=.5,tx=.5,ty=.5;
+  addEventListener('pointermove',function(e){tx=e.clientX/W;ty=e.clientY/H});
+
+  function light(blur,glow,breath){
+    var w=buf.width,h=buf.height;
+    b.setTransform(1,0,0,1,0,0);b.filter='none';b.globalCompositeOperation='source-over';b.globalAlpha=1;
+    b.fillStyle='#000';b.fillRect(0,0,w,h);
+    var s=Math.min(w,h)*(W<700?.62:.56)/VB[3]*(1+breath*.012);
+    var ox=w/2-(VB[2]*s)/2+(mx-.5)*w*.025, oy=h/2-(VB[3]*s)/2+(my-.5)*h*.025;
+    function logo(color,bl,a){b.save();b.globalAlpha=a;b.filter=bl>0?'blur('+bl.toFixed(1)+'px)':'none';
+      b.translate(ox,oy);b.scale(s,s);b.translate(-VB[0],-VB[1]);b.fillStyle=color;b.fill(ICON);b.restore()}
+    b.globalCompositeOperation='source-over';
+    logo('#EC0529',blur*3.2*DPR,.55*glow);   // halo
+    logo('#EC0529',blur*1.2*DPR,.95*glow);   // cuerpo
+    logo('#EC0529',blur*.35*DPR,.9*glow);    // definicion
+    logo('#EC0529',blur*.15*DPR,.6*glow);    // nucleo: mismo rojo, mas nitido
+  }
+  function reeds(){
+    var w=cv.width,h=cv.height,r=REED;
+    ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);
+    for(var x=0;x<w;x+=r){var c=x+r/2,sw=r*.55;ctx.drawImage(buf,c-sw/2,0,sw,h,x,0,r,h)}
+    for(var x2=0;x2<w;x2+=r){
+      var gr=ctx.createLinearGradient(x2,0,x2+r,0);
+      gr.addColorStop(0,'rgba(0,0,0,.62)');gr.addColorStop(.14,'rgba(0,0,0,0)');
+      gr.addColorStop(.3,'rgba(236,5,41,.05)');gr.addColorStop(.62,'rgba(0,0,0,0)');gr.addColorStop(1,'rgba(0,0,0,.7)');
+      ctx.fillStyle=gr;ctx.fillRect(x2,0,r,h);
+      ctx.fillStyle='rgba(255,255,255,.035)';ctx.fillRect(x2+r*.22,0,Math.max(1,DPR),h); // filo del vidrio
+    }
+  }
+  var line=document.getElementById('line'),P=0,nextBack=5+Math.random()*6,nextGl=2+Math.random()*3;
+  function glitch(){line.classList.remove('gl');void line.offsetWidth;
+    line.style.setProperty('--gx',(Math.random()*P*.8).toFixed(1)+'%');line.style.setProperty('--gw',(4+Math.random()*14).toFixed(1)+'%');
+    line.classList.add('gl')}
+  function progress(sec,dt){
+    var cap=99;P+=(cap-P)*Math.min(1,dt*0.045);           // sube lento, frena cerca del final
+    if(sec>nextBack){P=Math.max(4,P-(3+Math.random()*11));glitch();nextBack=sec+6+Math.random()*9}   // se devuelve
+    if(sec>nextGl){glitch();nextGl=sec+2.5+Math.random()*5}                                         // tics sueltos
+    line.style.width=Math.min(99,P).toFixed(2)+'%';
+  }
+  function frame(now){
+    var sec=(now-t0)/1000,dt=Math.min(.1,(now-last)/1000);last=now;mx+=(tx-mx)*.04;my+=(ty-my)*.04;
+    var focus=Math.min(1,sec/24);
+    var breath=Math.sin(sec*1.05)*.5+.5;
+    var flick=Math.random()<.004?.6:1;
+    var glow=Math.min(1,sec/2.4)*(.86+.14*breath)*flick;
+    var blur=(16-10*focus)*(S/900)+breath*1.4;   // mas definicion: nunca nitido, pero se lee
+    light(blur,glow,breath);reeds();progress(sec,dt);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  setTimeout(function(){document.body.classList.add('ready')},50);
+  function tick(){var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Santo_Domingo'}));
+    var h=d.getHours();document.getElementById('clock').textContent=String(h%12||12).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')+(h<12?' am':' pm')}
+  tick();setInterval(tick,10000);
+})();
+</script>
+</body>
+</html>
